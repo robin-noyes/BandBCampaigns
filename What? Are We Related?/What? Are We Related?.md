@@ -14,14 +14,14 @@ Core Deck V2,Cloud Security (variation 2), RedCanary, Huntress
 
 ## Scenarios
 ### Variation 1
-![](23andMe_v1.png)
+![](SolutionV1.png)
 
 ### Variation 2
-![](23andMe_V2.png)
+![](SolutionV2.png)
 
 
 ### Initial Compromise
-_**Password Spray/ Credential Stuffing
+**Password Spray/ Credential Stuffing**
 Hackers used previous password dumps to perform a credential stuffing attack against 14,000 different accounts.  We humans are creatures of habit and tend to be lazy.  Therefore those outside of cyber security (and probably some in it) often use the same credentials across multiple sites and accounts.
 
 ### Pivot & Escalate
@@ -98,21 +98,21 @@ Technical
 ## Procedure Failures
 ### General Reasons
 - Technical
-	-  VarProcedure didn't detect anything because the attacker changed TTPs (Tactics, Techniques, Procedures).
+	- VarProcedure didn't detect anything because the attacker changed TTPs (Tactics, Techniques, Procedures).
 	- VarProcedure didn't detect the attack because the agent or signatures are out of date.
-	-  VarProcedure didn't detect the attack because the agent couldn't be deployed on the OS/Server/Laptop/Endpoint.
+	- VarProcedure didn't detect the attack because the agent couldn't be deployed on the OS/Server/Laptop/Endpoint.
 	- VarProcedure didn’t work because the appliance/server is undergoing patch maintenance and unavailable.”
 	- VarProcedure didn’t work because the data center had an outage or no owner was identified for the system so it was unplugged/ripped out as part of vulnerability management.”
 - Financial
 	- VarProcedure didn't work because the budget wasn't approved to expand licensing for tool/service/project/application to subsidiary/offices/datacenter/branch/new location/work from home/contractors.
-	-  VarProcedure failed because the PO to renew the tool/service got stuck in the payment process. The tool/service stopped before someone noticed.
+	- VarProcedure failed because the PO to renew the tool/service got stuck in the payment process. The tool/service stopped before someone noticed.
 	- VarProcedure couldn't identify any of the attack because the tool/service features that would have detected it were part of the more expensive package that wasn't purchased.
 - Political
 	- VarProcedure wasn't configured at subsidiary/branch/business unit because Owner/VP/Senior Know-it-All/Project Manager said it would interfere with their CrItIcAl PrOjEcT timeline.
-	-  VarProcedure found nothing because the project to deploy agent/service/tool/configuration was delayed until next fiscal year by the board.
+	- VarProcedure found nothing because the project to deploy agent/service/tool/configuration was delayed until next fiscal year by the board.
 	- VarProcedure couldn't identify the attack because a member of the change board denied the change to deploy the service based on disagreements with the security team.
-	- Personnel
-	-  The only person that knows how to do/use VarProcedure is Casey and they're on vacation.
+- Personnel
+	- The only person that knows how to do/use VarProcedure is Casey and they're on vacation.
 	- The contractor hired to deploy VarProcedure ran out of hours in their contract.
 	- The team that manages VarProcedure is away at a conference.
 
