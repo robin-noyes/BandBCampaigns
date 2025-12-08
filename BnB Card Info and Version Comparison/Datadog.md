@@ -1,6 +1,6 @@
 # Datadog V1
 #### Released 2025
-** Initial Compromise**
+**Initial Compromise**
  - Exposed Cloud Credentials via Unauthenticated Kubernets Dashboard
 - Cloud Application Compromise
 - Backdoored Software Supply Chain
@@ -18,7 +18,7 @@
 - Instance Takeover via User Data
 - Credentials Exposed in Storage Bucket
   
-** C2 and Exfil**
+**C2 and Exfil**
 - Backdoored Role Trust Policy
 - Cloned Kubernetes Credentials
 - Additional Credential Creation

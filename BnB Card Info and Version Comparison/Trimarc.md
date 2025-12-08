@@ -1,6 +1,6 @@
 ## Trimarc V1
 #### Released 2024
-** Initial Compromise**
+**Initial Compromise**
 - AI-Generated Script
 - Forrest Trusts
 - SSO Provider Compromise
@@ -18,7 +18,7 @@
 - Golden Ticket Attack
 - Server Management Compromise  
 
-** C2 and Exfil**
+**C2 and Exfil**
 - Living Off Trusted Sites (LOTS)
 - GIFs As C2
 

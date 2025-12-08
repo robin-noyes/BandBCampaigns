@@ -1,6 +1,6 @@
 ### Core Deck V1
 #### Released 2019
-_** Initial Compromise 
+**Initial Compromise** 
 - Credential Stuffing
 - Exploitable External Service
 - Bring Your Own (Exploited) Device
@@ -12,7 +12,7 @@ _** Initial Compromise
 - External Cloud Access
 - Phish
   
-_**Pivot and Escalate
+**Pivot and Escalate**
 - Local Privilege Escalation
 - New Service Creation/Modification
 - Credential Stuffing
@@ -21,7 +21,7 @@ _**Pivot and Escalate
 - Broadcast/Multicast Protocol Poisoning
 - Weaponizing Active Directory
 
-_** C2 and Exfil
+** C2 and Exfil**
 - HTTP as Exfil
 - HTTPS as Exfil
 - DNS as C2
@@ -29,7 +29,7 @@ _** C2 and Exfil
 - Gmail, Tumblr, Salesforce, Twitter/X as C2
 - Domain Fronting as C2
 
-_**Persistance
+**Persistance**
 - Accessibility Features
 - Evil Firmware
 - Logon Scripts
@@ -40,7 +40,7 @@ _**Persistance
 - DLL Attacks
 - Malicious Service/Just Malware
 
-_**Procedures
+**Procedures**
 - Endpoint Analysis
 - User and Entity Behavior Analytics (UEBA)
 - Server Analysis
@@ -52,7 +52,7 @@ _**Procedures
 - Endpoint Security Protection Analysis
 - Internal Segmentation
 
-_**Injects
+**Injects**
 - Honeypots Deployed
 - It was a Pentest
 - Data Uploaded to Pastebin
@@ -64,12 +64,12 @@ _**Injects
 - Legal Takes Your Only Skilled Handler Into a Meeting to Explain the Incident
 - Management has Just Approved the Release of a New Procedure
 
-_**Consultants
+**Consultants**
 There are no consultant cards in the Core Decks
 
 ### Core Deck V2
 #### Released 2021
-_** C2 and Exfil
+**C2 and Exfil**
 -  Removed Internal Segmentation
 - Memory Analysis
 - Cyber Deception
@@ -82,21 +82,21 @@ No changes from V2.2
 
 ### Core Deck V3
 #### Released 2025
-_** Initial Compromise 
+**Initial Compromise**
 - Same as V1 with minor renames
 - Compromised Trusted Relationship
 - External Password Spray
 - Compromised Web Server 
 
-_** C2 and Exfil
+**C2 and Exfil**
 - Cloud-Based Services as Exfil
 
-_**Procedures
+**Procedures**
 - Same as V2 plus
 - Permissions Audit
 - Cloud Event Log Analysis
   
-_**Injects
+**Injects**
 - Removed *Honeypots Deployed*, *Take One Procedure Card Away*, 
 *Give the Defenders a Random Procedure Card*, and *Lead Handler Has a Baby, Takes FMLA Leave* . 
 - Analyst Returns from IR Training

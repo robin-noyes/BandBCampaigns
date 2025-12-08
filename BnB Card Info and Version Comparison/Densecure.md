@@ -18,7 +18,7 @@
 - Misconfigured Certificate Template
 - SUID Permissions Abuse
   
-** C2 and Exfil**
+**C2 and Exfil**
 - Bluetooth As Exfil
 - Unauthorized Filesharing Utility
 - Hosted Note Taking As C2
