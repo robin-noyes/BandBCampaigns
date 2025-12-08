@@ -6,10 +6,10 @@ This section will only call out specific differences between decks.  If the card
 
 #### Core Deck 
 **Initial Compromise**\
-Versions 1-3 have minor differences within the Initial Compromise cards. \
+Versions 1-3 have minor differences within the Initial Compromise cards.\
 Version 3 changes _Trusted Relationship_ to _Compromised Trusted Relationship_ , _Password Spray_ to _External Password Spray_ , and _Web Server Compromise_ to _Compromised Web server_.  
 
-**Pivot and Escalate**
+**Pivot and Escalate**\
 No differences in techniques and tactics. 
 
 **C2 and Exfil**\
@@ -17,6 +17,10 @@ Version 3 changes _Gmail, Tumblr, SaleseForce, Twitter/X as exfil_ to _Cloud-Bas
 
 **Persistance**\
 No differences in techniques and tactics. 
+
+**Procedures**\
+Version 1 has _Internal Segmentation_ which is not found in any other deck.
+
 
 **Injects**
 Version 1 had *Management has Just Approved the Release of a New Procedure* .  Version 2 introduces two new cards, _Memory Analysis_ and _Cyber Deception_ .  These are also available in ICS/IOT V1.1 Version 3 added two new cards _Permissions Audit_ and _Cloud Event Log Analysis_.   Both of these cards are seen again in Trimaran V1, Denscure V1, Cloud Security V1 and V1.2. 
@@ -26,39 +30,39 @@ There are no consultant cards in the Core decks.
 
 
 #### Expansion Deck
-**Initial Compromise:Three new cards**\
-**Pivot and Escalate:**  Five new cards: \
-**C2 and Exfil:** One new card \
+**Initial Compromise:** Three new cards\
+**Pivot and Escalate:**  Five new cards\
+**C2 and Exfil:** One new card\
 **Persistance:** Five new cards\
-**Procedures:** Two new cards \
+**Procedures:** Two new cards\
 **Injects:** Ten new cards\
 **Consultants:** Introduces Consultants and adds 10 new cards
 
 
-#### Huntress 
+#### Huntress
 **Initial Compromise:** Four new cards\
-**Pivot and Escalate:** Two new cards:\ 
-**C2 and Exfil:** Two new card\
+**Pivot and Escalate:** Two new cards\ 
+**C2 and Exfil:** Two new cards\
 **Persistance:** Four new cards\
 **Procedures:** One new card\
 **Injects:** Fourteen new cards\
 **Consultants:** Six new cards
 
 
-#### Trimarc 
+#### Trimarc
 **Initial Compromise:** Seven new cards\
 **Pivot and Escalate:** Seven new cards\ 
-**C2 and Exfil:** Two new card\ 
+**C2 and Exfil:** Two new cards\ 
 **Persistance:** Two new cards\
 **Procedures:** One new card\ 
 **Injects:** Fourteen new cards\
-**Consultants:** Six new cards\
+**Consultants:** Six new cards
 
 
 #### Red Canary 
 **Initial Compromise:** Five new cards\
 **Pivot and Escalate:** Seven new cards\ 
-**C2 and Exfil:**** Two new card\ 
+**C2 and Exfil:** Two new cards\ 
 **Persistance:** Four new cards\
 **Injects:** Eight new cards\
 **Consultants:** Three new cards
@@ -67,7 +71,7 @@ There are no consultant cards in the Core decks.
 #### Densecure
 **Initial Compromise:** Seven new cards\
 **Pivot and Escalate:** Seven new cards\ 
-**C2 and Exfil:** Three new card\ 
+**C2 and Exfil:** Three new cards\ 
 **Persistance:** Four new cards\
 **Injects:** Eight new cards
 
@@ -75,19 +79,23 @@ There are no consultant cards in the Core decks.
 #### Datadog
 **Initial Compromise:** Eight new cards\
 **Pivot and Escalate:** Three new cards\ 
-**C2 and Exfil:** Three new card\ 
+**C2 and Exfil:** Three new cards\ 
 **Persistance:** Five new cards\
 **Injects:** Eight new cards
 
 
 #### Cloud Security
 The major difference between version 1 and 1.1 is the assignment of the tactic.  Version 1 has _Identity and Access Management (IAM) Policy Abuse_ as Initial Compromise, whereas Version 1.1 has this as Pivot and Escalate.  
+#### V1
+**Initial Compromise:** Three new cards\
+#### V2
+**Initial Compromise:** Seven new cards\
 
 
 #### ICS/IOT 
-**Initial Compromise:** Seven new card\
+**Initial Compromise:** Seven new cards\
 **Pivot and Escalate:** Four new cards\ 
-**C2 and Exfil:** Four new card\ 
+**C2 and Exfil:** Four new cards\ 
 **Persistance:** Four new cards\
 **Procedure:** Six new cards\
 **Injects:** Nine new cards\
