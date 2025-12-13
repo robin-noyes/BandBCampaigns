@@ -73,24 +73,22 @@ The adversary continued to access the 23andMe website, using multiple different 
 ## Procedure Success (explanations of why it worked)
 ### General Reasons
 Technical
-- VarProcedure found unauthorized/suspicious evidence of IP/commands/software/log deletion on the system.  This was found by correlating logs from multiple data sets EDR/Windows Logs/Firewall/Proxy/Server/UberAgent.  This allowed for finding patient zero to use in subsequent searches.
+	- VarProcedure found unauthorized/suspicious evidence of IP/commands/software/log deletion on the system.  This was found by correlating logs from multiple data sets EDR/Windows Logs/Firewall/Proxy/Server/UberAgent.  This allowed for finding patient zero to use in subsequent searches.
 	- VarProcedure discovered suspect network/data/flow activity between two devices that warrant further investigation of ports and protocols used.
-	- VarProcedure discovered system changes during off-hours/outside of scheduled maintenance windows, leading the team to dig deeper into changes made.
-	- VarProcedure discovered the system had several unpatched vulnerabilities/vulnerable libraries in use.
-	- VarProcedure discovered a portion of the attack due to recent signature/agent/module updates.
+	
 
 - Financial
-	- VarProcedure  was successful due to the recent budget approval to collect/deploy additional tool/services/application/log sources across the environment.”
-	- “VarProcedure  was successful due to the recent implementation of additional models/packages for the tool/service/application which allowed key features to be enabled.”
-	- “VarProcedure was successful due to the recent hire of a SME on the specific tool.”
-	- “VarProcedure worked due to the recent approval for additional collectors implemented in the branch/office/data center.”
-	-  VarProcedure SME has returned from training with new in-depth knowledge to share.
-
+	- VarProcedure  was successful due to the recent budget approval to collect/deploy additional tool/services/application/log sources across the environment.
+	- VarProcedure  was successful due to the recent implementation of additional models/packages for the tool/service/application which allowed key features to be enabled.
+	
 - Political
-	-
+	- VarProcedure was effective because the board approved the deployment project within the current fiscal year, recognizing the operational risk of delay and prioritizing security readiness.
+	- VarProcedure operated effectively because the user/team/manager had built trust with the security team, understood the boundaries of authority, and granted the necessary rights and permissions. This collaboration enabled timely investigation without escalation.
+
 	 
 - Personnel
-	- VarProcedure
+	- VarProcedure worked successfully because multiple personnel were cross-trained, ensuring continuity even when one expert was unavailable.
+	- VarProcedure worked successfully because agents were thoroughly tested, validated, and monitored, ensuring they remained installed and functional across critical systems.
 
 
 
@@ -99,42 +97,40 @@ Technical
 ### General Reasons
 - Technical
 	- VarProcedure didn't detect anything because the attacker changed TTPs (Tactics, Techniques, Procedures).
-	- VarProcedure didn't detect the attack because the agent or signatures are out of date.
-	- VarProcedure didn't detect the attack because the agent couldn't be deployed on the OS/Server/Laptop/Endpoint.
-	- VarProcedure didn’t work because the appliance/server is undergoing patch maintenance and unavailable.”
-	- VarProcedure didn’t work because the data center had an outage or no owner was identified for the system so it was unplugged/ripped out as part of vulnerability management.”
+	- VarProcedure did not detect the attack because the agent/signatures are out of date or were corrupted during a recent update.
+	
 - Financial
-	- VarProcedure didn't work because the budget wasn't approved to expand licensing for tool/service/project/application to subsidiary/offices/datacenter/branch/new location/work from home/contractors.
+	- VarProcedure did not work because the budget was not approved or was delayed to expand licensing for tool/service/project/application to subsidiary/offices/datacenter/branch/new location/work from home/contractors.
 	- VarProcedure failed because the PO to renew the tool/service got stuck in the payment process. The tool/service stopped before someone noticed.
-	- VarProcedure couldn't identify any of the attack because the tool/service features that would have detected it were part of the more expensive package that wasn't purchased.
+	
 - Political
 	- VarProcedure wasn't configured at subsidiary/branch/business unit because Owner/VP/Senior Know-it-All/Project Manager said it would interfere with their CrItIcAl PrOjEcT timeline.
 	- VarProcedure found nothing because the project to deploy agent/service/tool/configuration was delayed until next fiscal year by the board.
-	- VarProcedure couldn't identify the attack because a member of the change board denied the change to deploy the service based on disagreements with the security team.
+	
 - Personnel
-	- The only person that knows how to do/use VarProcedure is Casey and they're on vacation.
+	- VarProcedure did not work because the only person that knows how to do/use VarProcedure is on vacation/retired/RIF/terminated yesterday.
 	- The contractor hired to deploy VarProcedure ran out of hours in their contract.
-	- The team that manages VarProcedure is away at a conference.
 
 ### Procedure Failures Explanations
 -Server Analysis
 - Technical
-	-  During a planned maintenance activity, the incorrect server was shut-down.  This caused the failover system to become the primary active server, as a result no artifacts were found.  The application team is working on bringing up the correct server and providing access to the IR team.
+	- During a planned maintenance activity, the incorrect server was shut-down.  This caused the failover system to become the primary active server, as a result no artifacts were found.  The application team is working on bringing up the correct server and providing access to the IR team.
 - Financial
 	- A member of the application team was a bit overzealous when told they need to trim costs on hardware.  They scripted a cronjob to clean up any webapp logs older than 7 days--you were shipping this to the SIEM, right?
 - Political
 	- The application teams did not create the break-glass accounts as they felt that would be too much power to another team.  The team has been having to work through a single-user who is not as experienced on this system and they keep providing the wrong log, wrong command output, and the delays in getting information are impacting the progress of the investigation.
 - Personnel
-	-  Our primary forensics led is away at a conference and will not be back for two weeks.  The team is working to find their documentation to obtain artifacts.
+	- Our primary forensics led is away at a conference and will not be back for two weeks.  The team is working to find their documentation to obtain artifacts.
 
 -User and Entity Behavior Analytics (EUBA)  
 - Technical
-	- 
+	- The UEBA did not have enough initial data to determine initial baselines for effective alerting/detection.  Therefore, the specified behaviors did not trigger an event.
 - Financial
-	-  
+	-  A limited scope license was initially purchased, the UEBA tool cannot ingest all required data sources or is not on all required systems (only laptops not servers, etc).
 - Political
-	- 
+	- Siloed departments refused to share their logs due to territorialism or fear of scrutiny.
 - Personnel
+	- Key staff are overloaded, leaving no time to tune or validate UEBA detections.
 
 -Security Information and Even Management (SIEM) Log Analysis
 - Technical
@@ -142,18 +138,20 @@ Technical
 - Financial
 	-  Budget was not approved to allow for maintaining more than 7 days of logs for the authentication data of the web application. 
 - Political
-	- 
-- Personnel
+	- No team has been held accountable for tuning, maintenance, or validating the tool's output.
+- Personnel	
+	- Our primary forensics led is away at a conference and will not be back for two weeks.  The team is working to find their documentation to obtain artifacts.
 
--Cloud
+- Cloud Event Log Analysis
 - Technical
-	- Logging was incorrectly implemented , resulting in only partial log activity being available.
+	-  Logging was incorrectly implemented , wrong logging level or wrong data elements,  resulting in only partial log activity being available.
 - Financial
-	-  
+	-  Someone incorrectly estimated the level of data we would be generating.  Therefore, we do not have all of the high-volume logs like VPC flowlogs or Cloudtrail. 
 - Political
-	- 
+	- The application teams did not create the break-glass accounts as they felt that would be too much power to another team.  The team has been having to work through a single-user who is not as experienced on this system and they keep providing the wrong log, wrong command output, and the delays in getting information are impacting the progress of the investigation.
 - Personnel
-
+	- The team lacks experience with IAM events, API logs, or cloud threat patterns
+	
 ## Game Start 
 A 3rd party, with whom the company has no prior relationship, has notified our company of the discovery of data being sold on the dark web that appears to be from our company.  
 
