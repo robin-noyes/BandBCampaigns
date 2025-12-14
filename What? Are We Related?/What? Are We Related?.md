@@ -38,7 +38,7 @@ The adversary continued to access the 23andMe website, using multiple different 
 
 
 ## Procedures that Reveal the Attack Chain
-
+![](Procedures.png)
 * Security Information and Even Management (SIEM) Log Analysis
 	* Initial Compromise--Password Spray; Credential Stuffing
 	* Pivot and Escalate--Credential Stuffing; Query of Cloud API
@@ -76,7 +76,6 @@ Technical
 	- VarProcedure found unauthorized/suspicious evidence of IP/commands/software/log deletion on the system.  This was found by correlating logs from multiple data sets EDR/Windows Logs/Firewall/Proxy/Server/UberAgent.  This allowed for finding patient zero to use in subsequent searches.
 	- VarProcedure discovered suspect network/data/flow activity between two devices that warrant further investigation of ports and protocols used.
 	
-
 - Financial
 	- VarProcedure  was successful due to the recent budget approval to collect/deploy additional tool/services/application/log sources across the environment.
 	- VarProcedure  was successful due to the recent implementation of additional models/packages for the tool/service/application which allowed key features to be enabled.
