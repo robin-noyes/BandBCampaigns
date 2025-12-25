@@ -19,7 +19,7 @@ Huntress, Cloud, DenSecure,
 
 ## Scenarios
 ### Variation 1
-![](Scenario_SSN-onymous_V1.png)
+![](Scenario_SSN-onymous_v1.png)
 
 ### Variation 2
 ![](Scenario_SSN-onymous_v2.png)
@@ -80,7 +80,8 @@ This card was selected to give a more cloud specific feel to the scenario given 
 
 ### Procedure Success Explanations
 - Technical
-	- The cloud provider spontaneously fixed itself: Not only did services come back online, but logs retroactively filled themselves in, neatly timestamped, tagged, and correlated like a cosmic apology note.
+	- Somewhere, an unnamed cloud engineer pushed a fix at 3:17 a.m., realized it worked, and immediately went on PTO. The system healed, logs backfilled, and the status page never changed from “All systems operational.” 
+This is the cloud equivalent of elves fixing your shoes overnight.
 	- Containment worked so well it fixed unrelated problems: The “disabled” containment feature suddenly re‑enabled itself and quarantined three malware samples, two misconfigured printers, and one intern’s crypto‑mining rig.
 	- The documentation migration succeeded by accident: The corrupted files regenerated into a beautifully indexed knowledge base, complete with diagrams no one remembers creating and troubleshooting steps that actually work.
 
