@@ -8,7 +8,7 @@ Publicly accessible servers, databases, data brokers, Exactis Breach
 Huntress Exp,  Core V2.2
 
 ## Scenarios
-![](Scenario.png)
+![](Scenario_Exactly.png)
 
 ### Initial Compromise
 _**Public Facing Database Compromise**_
@@ -25,7 +25,7 @@ This event has not confirmed to have been the result of an attack, but with the 
 
 ## Procedures that Reveal the Attack Chain
 
-![](Procedures.png)
+![](Procedures_Exactly.png)
 
 ## Written Procedures
 * User and Entity Behavior Analytics (EUBA)  
