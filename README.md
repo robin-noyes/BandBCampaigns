@@ -31,14 +31,17 @@ Let us know what you think! And if somehow you arrived here having never heard o
 
 ### What? We Are Related
 *A scenario based off other the 23andMe security incident in 2023.  Optional features that allow more access to than they shoudld.*
+
 [Scenario Guide][4]
 
 ### Exactly What You Are Looking For, Right?
 *A scenario based upon the Exactis data broker security incident.  When your database gets away from you, can you find it ?*
+
 [Scenario Guide][5]
 
 ###SSN-onymous No More-From Data Broker to Broke
 *A scenario based upon the National Data Broker and Records Check dot net security incident.  Are you sure what information is being shared with the internet at large?*
+
 [Scenario Guide][6]
 
 
