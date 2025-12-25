@@ -41,7 +41,7 @@ Let us know what you think! And if somehow you arrived here having never heard o
 
 ### SSN-onymous No More-From Data Broker to Broke
 *A scenario based upon the National Data Broker and Records Check dot net security incident.  Are you sure what information is being shared with the internet at large?*
-
+[Scenario Guide][6]
 
 
 [1]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/Call%20From%20Inside%20the%20Network/Call%20From%20Inside%20the%20Network.md
@@ -49,3 +49,4 @@ Let us know what you think! And if somehow you arrived here having never heard o
 [3]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/WaterWaterEverywhere/WaterWaterEverywhere.md
 [4]:	https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/What%3F%20Are%20We%20Related%3F/What%3F%20Are%20We%20Related%3F.md
 [5]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Exactly%20What%20You%20Are%20Looking%20For%2C%20Right%3F/Exactly%20What%20You%20Are%20Looking%20For%2C%20Right%3F.md
+[6]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/SSN-onymous%20No%20More-From%20Data%20Broker%20to%20Broke/SSN-onymous%20No%20More%3A%20From%20Data%20Broker%20to%20Broke.md
