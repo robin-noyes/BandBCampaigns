@@ -19,29 +19,29 @@ Huntress, Cloud, DenSecure,
 
 ## Scenarios
 ### Variation 1
-![](Scenario_SSN-onymous_v1.png)
+![](Scenario_SSN-onymous_V1.png)
 
 ### Variation 2
 ![](Scenario_SSN-onymous_v2.png)
 
 ### Initial Compromise
-_**Publicly Exposed Secret Key
+**Publicly Exposed Secret Key_**
 This card was selected as reports indicate misconfiguration and/or lack security allowing unrestricted access to data.
-_**Unauthorized Cloud Access_** This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
+**Unauthorized Cloud Access** This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
 
 
 ### Pivot & Escalate
-_**Credential Exposed in Environment Variables_** This card was selected as a loose interpretation of a zip file containing credentials being available for download, without password, on the sister site of NPD.  
-_**Misconfigured Container Image Compromise**_
+**Credential Exposed in Environment Variables**  This card was selected as a loose interpretation of a zip file containing credentials being available for download, without password, on the sister site of NPD.  
+**Misconfigured Container Image Compromise**
 This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
 
 ### C2 & Exfil
-_**Unauthorized Filesharing Utility_** As there is no solid information on how the data was exfiltrated, it is assumed that a fileshare utility was used such as ShareFile,  WeTransfer, or Mega. 
-_**Cloud-Based Services as Exfile_** This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
+**Unauthorized Filesharing Utility** As there is no solid information on how the data was exfiltrated, it is assumed that a fileshare utility was used such as ShareFile,  WeTransfer, or Mega. 
+**Cloud-Based Services as Exfile** This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
 
 ### Persistence
-_**Malicious Services_** There is no evidence that a malicious service was crated but this card was selected to make the game play interesting. 
-_**Secondary Access Key Creation_** This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
+**Malicious Services** There is no evidence that a malicious service was crated but this card was selected to make the game play interesting. 
+**Secondary Access Key Creation** This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
 
 
 ## Procedures that Reveal the Attack Chain
@@ -59,8 +59,8 @@ _**Secondary Access Key Creation_** This card was selected to give a more cloud
 	* There is no data to confirm this would have any impact on the scenario but this card was selected as most enterprises have a some form of Endpoint Security Protection Analysis, which is being loosely interpreted as an EDR.  
 
 ## Procedure Success (explanations of why it worked)
- Technical
-- VarProcedure succeeded because the agent had been installed for a sufficient period, allowing it to collect enough telemetry to establish a solid baseline for detection.
+ - Technical
+	- VarProcedure succeeded because the agent had been installed for a sufficient period, allowing it to collect enough telemetry to establish a solid baseline for detection.
 	- VarProcedure worked efficiently due to appropriate permissions and full visibility across the environment, with no delays caused by approval workflows or access issues.
 	- VarProcedure worked as expected because comprehensive procedural documentation and updated network/data flow diagrams accurately reflected all critical paths and dependencies.
 
@@ -108,15 +108,15 @@ _**Secondary Access Key Creation_** This card was selected to give a more cloud
 	- VarProcedure did not work because budget to hire/train a SME on the tool was not approved.  The current team member does not have the required skill/training to do the proper analysis but are doing their best.
 	- VarProcedure did not work because the logging level had been lowered due to performance issues/degradations.  Newer devices would have reduced or eliminated the overall impact but had not been approved.  Executives are expediting the expenditure and implementation, to include professional services, to ensure data is available going forward.
 
- Political (Detection Adaptability, Deployment & Infrastructure Readiness, Data Quality & Log Integrity, Visibility & Scope Coverage, and Operational Maturity.))
--   VarProcedure did not work because a member of the change board denied the change to deploy the agent/service/tool based on disagreements with the security team.
+ - Political (Detection Adaptability, Deployment & Infrastructure Readiness, Data Quality & Log Integrity, Visibility & Scope Coverage, and Operational Maturity.))
+	- VarProcedure did not work because a member of the change board denied the change to deploy the agent/service/tool based on disagreements with the security team.
 	- VarProcedure did not work because due to disagreements over ownership and maintenance of the tool delayed deployment and configuration that could have shown artifacts related to the attack path used by the adversary.  The team has since been given approval to rapidly deploy the necessary tools/configurations to ensure logging will begin to flow.
 	- VarProcedure did not work because user/team/manager feels that the security team already has too much power and refuses to install/apply the required rights and permissions needed.  This will need to be corrected before the investigation can be completed.  This is an important reason to build inter-business relationships to confirm and explain under what circumstances the 'power' would be yielded and who has the authority to approve it.	
 
 - Personnel (availability, skill and experience level, motivation, teamwork, quantity)
 	- VarProcedure did not work because the team that manages/approves using VarProcedure is away at a conference.
-		-VarProcedure did not work because the tool/system requires physical access and the nearest expert technician is hours away.
-		-VarProcedure did not work because the SME is out of the country and unable to be contacted.  The team must use the provided playbook and hope for the best, albeit at a much slower pace.
+	- VarProcedure did not work because the tool/system requires physical access and the nearest expert technician is hours away.
+	- VarProcedure did not work because the SME is out of the country and unable to be contacted.  The team must use the provided playbook and hope for the best, albeit at a much slower pace.
 
 ### Procedure Failures Explanations
 - Technical
