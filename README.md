@@ -3,40 +3,48 @@ Backdoors & Breaches was created at Black Hills Information Security to facilita
 
 Those questions were the birth of B&B: Campaigns. 
 
-Backdoors & Breaches: Campaigns are guides designed to educate players about noteworthy security breaches while discussing if their organization is ready to defend against an attack like the one presented. Each campaign guide enables the Incident Master to place specific cards into the attack chain that most closely represent a well-known breach. The Incident Master will be provided with Procedure Cards to use for the written procedures. The guide will also provide examples to help explain why a card that should succeed would fail. Finally, the story and background for the game is presented with references to help the Incident Capatin gain context before play and for the players to read afterward. 
+Backdoors & Breaches: Campaigns are guides designed to educate players about noteworthy security breaches while discussing if their organization is ready to defend against an attack like the one presented. Each campaign guide enables the Incident Master to place specific cards into the attack chain that most closely represent a well-known breach. The Incident Master will be provided with Procedure Cards to use for the written procedures. The guide will also provide examples to help explain why a card that should succeed would fail. Finally, the story and background for the game is presented with references to help the Incident Captain gain context before play and for the players to read afterward. 
 
-Each campaign is designed to make Tabletop Exercises even easier to educate, train, and prepare for repsponding to Incidents. 
+Each campaign is designed to make Tabletop Exercises even easier to educate, train, and prepare for responding to Incidents. 
 
 Got an idea for a campaign? Great! Use the template located here to create a new campaign. Once your ready make a pull request in GitHub. That's it! We'll review it and if everything looks good we will publish it here to share with others. (with credit of course!)
 
 Let us know what you think! And if somehow you arrived here having never heard of Backdoors & Breaches you can learn all about the game here - https://www.backdoorsandbreaches.com 
 
 
-## Core
+## Scenarios
 
 ### The Call Came from Inside the Network
 *A scneario based on the Ubiquiti Breach. Is your team ready for an insider threat attempting to extort you that also happens to be on your Incident Response Team?*
 
-[Scenario Guide](https://github.com/AntiSyphon/BandBCampaigns/blob/main/Call%20From%20Inside%20the%20Network/Call%20From%20Inside%20the%20Network.md)
+[Scenario Guide][1]
 
 ### That's Disputable
-*A scenario based on the Equifax breach. How does you team handle critical vulnerablities on a publically facing system disclosing millions of PII records?*
+*A scenario based on the Equifax breach. How does you team handle critical vulnerabilities on a publicly facing system disclosing millions of PII records?*
 
-[Scenario Guide](https://github.com/AntiSyphon/BandBCampaigns/blob/main/That's%20Disputable/That's%20Disputable.md)
-
-### Supply & Demand
-Solarwinds
-Supply Chain
-
-## ICS
+[Scenario Guide][2]
 
 ### Water Water Everywhere
-*A scenario where a Florida Water Treatment Plant has a security incident related to TeamViewer. Are you ready to detect outside access to a laptop in your enviornment that allows access to sensitive systems?*
+*A scenario where a Florida Water Treatment Plant has a security incident related to TeamViewer. Are you ready to detect outside access to a laptop in your environment that allows access to sensitive systems?*
 
-[Scenario Guide](https://github.com/AntiSyphon/BandBCampaigns/blob/main/WaterWaterEverywhere/WaterWaterEverywhere.md)
+[Scenario Guide][3]
 
-### A Series of Tubes
-Colonial Pipeline
+### What? We Are Related
+*A scenario based off other the 23andMe security incident in 2023.  Optional features that allow more access to than they shoudld.*
+[Scenario Guide][4]
 
-### You Spin Me Right Round
-Stuxnet
+### Exactly What You Are Looking For, Right?
+*A scenario based upon the Exactis data broker security incident.  When your database gets away from you, can you find it ?*
+[Scenario Guide][5]
+
+###SSN-onymous No More-From Data Broker to Broke
+*A scenario based upon the National Data Broker and Records Check dot net security incident.  Are you sure what information is being shared with the internet at large?*
+[Scenario Guide][6]
+
+
+[1]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/Call%20From%20Inside%20the%20Network/Call%20From%20Inside%20the%20Network.md
+[2]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/That's%20Disputable/That's%20Disputable.md
+[3]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/WaterWaterEverywhere/WaterWaterEverywhere.md
+[4]:	https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/What%3F%20Are%20We%20Related%3F/What%3F%20Are%20We%20Related%3F.md
+[5]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Exactly%20What%20You%20Are%20Looking%20For%2C%20Right%3F/Exactly%20What%20You%20Are%20Looking%20For%2C%20Right%3F.md
+[6]:	
