@@ -14,10 +14,10 @@ Core Deck V2,Cloud Security (variation 2), RedCanary, Huntress
 
 ## Scenarios
 ### Variation 1
-![](SolutionV1.png)
+![](Related_SolutionV1.png)
 
 ### Variation 2
-![](SolutionV2.png)
+![](Related_SolutionV2.png)
 
 
 ### Initial Compromise
@@ -38,7 +38,7 @@ The adversary continued to access the 23andMe website, using multiple different 
 
 
 ## Procedures that Reveal the Attack Chain
-![](Procedures.png)
+![](Related_Procedures.png)
 * Security Information and Even Management (SIEM) Log Analysis
 	* Initial Compromise--Password Spray; Credential Stuffing
 	* Pivot and Escalate--Credential Stuffing; Query of Cloud API
