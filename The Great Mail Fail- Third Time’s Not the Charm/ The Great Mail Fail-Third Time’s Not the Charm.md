@@ -1,4 +1,5 @@
 # The Great Mail Fail: Third Time’s Not the Charm
+## MailChimp
 ### Author: Robin Noyes
 ## Summary of Event
 In January 2023, Mailchimp disclosed that an unauthorized actor gained access to an internal tool used by customer support and account administration after conducting a social engineering attack on employees and contractors. Using compromised employee credentials, the attacker accessed data for 133 customer accounts; Mailchimp temporarily suspended affected accounts and began notifying and restoring them within about a day of detecting the incident on January 11–12, 2023. (Mailchimp, CyberSecurityDive)

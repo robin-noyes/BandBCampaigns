@@ -1,4 +1,5 @@
 # SSN-onymous No More: From Data Broker to Broke
+## NationalPublicData
 ### Author: Robin Noyes
 ## Summary of Event
 In July 2024,  a hacker by the handle of USDOd,  released4 terabytes of data on BreachfForums that is purported to be acquired from the website nationalpublicdata.com (Krebs, 2024) .  The company collected public information that was then used in the performance of background screening and fraud prevention services, such as court documents, public and non-public available sources, and aggregated data which included names, addresses, social security numbers, and other sensitive data (databreach.com ).  

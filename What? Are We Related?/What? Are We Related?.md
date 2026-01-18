@@ -1,5 +1,6 @@
 
 # What? We Are Related
+## 23andMe
 ### Author: Robin Noyes
 #### Summary of Event 
 In October of 2023 a database of 23andMe's, a genetic testing and linage company, user data was found being sold in dark web forums; which appeared to be data of mostly targeting individuals of Chinese and Ashkenazi Jewish heritage.  Reports indicate that  14,000 customers data, .1 % of its 14 million customers, data was directly accessed.  However,  due to the initial compromised users having enabling the opt-in DNA Relatives' feature, it is estimated that at least 6.9 million users data had been accessed.  23andMe confirmed in December, 2023 that nearly half of its customer data was accessed by the threat actor.   The data included DNA results, predicted relationship information, family-tree information,  health-related information based on profiles, email addresses, phone numbers, and display names.  The adversary utilized dumps of previous compromised credentials and utilized this data to perform multiple credential stuffing attacks.  23andMe is facing 30 separate lawsuits and insists it was not at fault and did not suffer a security breach.  Rather, in the notifications to consumers “users negligently recycled and failed to update their passwords following these past security incidents, which are unrelated to 23andMe.” (Techcrunh, 2024)  
