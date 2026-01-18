@@ -49,6 +49,11 @@ Let us know what you think! And if somehow you arrived here having never heard o
 
 [Scenario Guide][7]
 
+### Paging Dr. USB: Your Extraction Is Ready
+*The security incident at Southern Georgia Medical Center is a stark reminder that we need to have a tight offboarding process and control as we do for onboarding.  Why work at ohter methods of accessing and exfiltrating data when you can download it and walk it out the door.
+
+[Scenario Guide][8]
+
 [1]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/Call%20From%20Inside%20the%20Network/Call%20From%20Inside%20the%20Network.md
 [2]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/That's%20Disputable/That's%20Disputable.md
 [3]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/WaterWaterEverywhere/WaterWaterEverywhere.md
@@ -56,3 +61,4 @@ Let us know what you think! And if somehow you arrived here having never heard o
 [5]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Exactly%20What%20You%20Are%20Looking%20For%2C%20Right%3F/Exactly%20What%20You%20Are%20Looking%20For%2C%20Right%3F.md
 [6]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/SSN-onymous%20No%20More-From%20Data%20Broker%20to%20Broke/SSN-onymous%20No%20More%3A%20From%20Data%20Broker%20to%20Broke.md
 [7]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/The%20Great%20Mail%20Fail-%20Third%20Time’s%20Not%20the%20Charm/%20The%20Great%20Mail%20Fail-Third%20Time’s%20Not%20the%20Charm.md
+[8]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Paging%20Dr.%20USB-%20Your%20Extraction%20Is%20Ready/Paging%20Dr.%20USB%3A%20Your%20Extraction%20Is%20Ready.md
