@@ -50,7 +50,7 @@ Let us know what you think! And if somehow you arrived here having never heard o
 [Scenario Guide][7]
 
 ### Paging Dr. USB: Your Extraction Is Ready
-*The security incident at Southern Georgia Medical Center is a stark reminder that we need to have a tight offboarding process and control as we do for onboarding.  Why work at ohter methods of accessing and exfiltrating data when you can download it and walk it out the door.
+*The security incident at Southern Georgia Medical Center is a stark reminder that we need to have as tight of offboarding process and controls as we do for onboarding.  Why work on other methods of accessing and exfiltrating data when you can download it and walk it out the door.
 
 [Scenario Guide][8]
 
