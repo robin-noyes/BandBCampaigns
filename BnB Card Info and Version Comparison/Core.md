@@ -21,7 +21,7 @@
 - Broadcast/Multicast Protocol Poisoning
 - Weaponizing Active Directory
 
-** C2 and Exfil**
+**C2 and Exfil**
 - HTTP as Exfil
 - HTTPS as Exfil
 - DNS as C2
@@ -73,7 +73,8 @@ There are no consultant cards in the Core Decks
 -  Removed Internal Segmentation
 - Memory Analysis
 - Cyber Deception
-_**Injects
+
+**Injects**
 - Removed *Management has Just Approved the Release of a New Procedure*
 
 ### Core Deck V2.2
