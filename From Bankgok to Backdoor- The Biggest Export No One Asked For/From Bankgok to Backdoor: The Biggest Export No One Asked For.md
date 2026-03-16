@@ -24,32 +24,32 @@ Core V1/3, Expansion V1.2, Cloud Security V1.1, Densecure, Trimaranc, Datadog
 **_External Cloud Access / Unauthorized Cloud Access / Public Storage Bucket Exposed_**
 This is the moment the attackers found the first loose thread in the sweater. Whether it was an exposed cloud endpoint, an overly generous storage bucket, or an access control policy written by someone who clearly believed in radical trust, the attackers spotted an opening and took it. Think of it as the digital equivalent of leaving your front door unlocked — not because you meant to, but because you were ‘just running back inside for a second.’ The attackers simply walked in, admired the décor, and decided to stay awhile.   Researches, hackers, and others scan the internet for open unsecured systems to attack.  Always know your perimeter  and scan yourself often.  
 MITRE ATT&CK:
-T1190 — Exploit Public‑Facing Application
-T1046 — Network Service Discovery
-T1087 — Account Discovery (secondary)
-T1133 — External Remote Services
+- T1190 — Exploit Public‑Facing Application
+- T1046 — Network Service Discovery
+- T1087 — Account Discovery (secondary)
+- T1133 — External Remote Services
 
 ### Pivot & Escalate
 **_Default Administrator Credentials/Cleartext Password in Files_**
 Once inside, the attackers did what attackers always do: they went exploring. Maybe they found default admin credentials lying around like a spare key under the mat, or maybe they stumbled across a cleartext password tucked into a file named something subtle like ‘DO_NOT_SHARE.txt.’ Either way, they upgraded their access with the enthusiasm of someone discovering their hotel key opens the penthouse suite. It’s the classic ‘why stop at one door when all the doors are open?’ maneuver.  This was selected as there is no option for ’no password required’ .   
 MITRE ATT&CK:
-T1195 — Supply Chain Compromise
-T1078 — Valid Accounts
-T1068 — Privilege Escalation
+- T1195 — Supply Chain Compromise
+- T1078 — Valid Accounts
+- T1068 — Privilege Escalation
 
 ### C2 & Exile
 **_Domain Fronting as C2 / Living off the Cloud Exfil_**
 Here’s where the attackers started whispering back to home base or quietly shuttling data out the side door. Whether they hid inside legitimate cloud traffic or blended into CDN noise like a chameleon in a paint store, their goal was simple: stay connected, stay unnoticed, and move data without raising alarms. It’s the cyber equivalent of using the office Wi‑Fi to stream movies during work hours — technically possible, highly questionable, and surprisingly hard to spot if you know what you’re doing.  None of the references indicate there was any C2 used for the exile as the information was available directly on the internet.  These C2 were selected to make the game play more interesting.
 MITRE ATT&CK:
-T1041 — Exfiltration Over C2 Channel
-T1567 — Exfiltration to Cloud Storage
+- T1041 — Exfiltration Over C2 Channel
+- T1567 — Exfiltration to Cloud Storage
 
 ### Persistence
 **_Cloud Application Impersonation / Additional Credential Created_**
 Persistence is where the attackers made sure they could come back later, even if defenders slammed the door shut. Maybe they impersonated a cloud application with just enough legitimacy to pass casual inspection, or maybe they created new credentials with the confidence of someone adding themselves to the VIP list. Either way, they left behind a quiet little backdoor — not flashy, not loud, just a subtle ‘don’t mind me’ foothold designed to outlive the initial intrusion.”  None of the research indicated any persistence mechanism used.  However, these options were selected based on other cloud specific attack vectors.
 MITRE ATT&CK:
-T1098 — Account Manipulation
-T1505 — Server‑Side Component Persistence
+- T1098 — Account Manipulation
+- T1505 — Server‑Side Component Persistence
 
 ## Procedures that Reveal the Attack Chain
 ![](Procedures-Bankgok.png)
