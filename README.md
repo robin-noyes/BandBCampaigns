@@ -50,9 +50,18 @@ Let us know what you think! And if somehow you arrived here having never heard o
 [Scenario Guide][7]
 
 ### Paging Dr. USB: Your Extraction Is Ready
-*The security incident at Southern Georgia Medical Center is a stark reminder that we need to have as tight of offboarding process and controls as we do for onboarding.  Why work on other methods of accessing and exfiltrating data when you can download it and walk it out the door.
+*The security incident at Southern Georgia Medical Center is a stark reminder that we need to have as tight of offboarding process and controls as we do for onboarding.  Why work on other methods of accessing and exfiltrating data when you can download it and walk it out the door.*
 
 [Scenario Guide][8]
+
+### From Bankgok to Backdoor - The Biggest Export No One Asked For
+*A scenario based on AIS/AWN’s spectacularly unsecured 8.3 billion‑record database, proving that when you leave DNS and NetFlow logs hanging out on the open internet, someone will absolutely notice — and it won’t be your security team. Bonus points for the follow‑up PBX breach claims, because nothing says “we’ve got this under control” like a telecom repeatedly learning the same lesson in public.*
+
+
+[Scenario Guide][9]
+### Special Delivery-Plug and Prey, Get Ransomware
+*A scenario inspired by FIN7’s gift‑card‑themed BadUSB campaign, where plugging in a “free reward” turns out to be the fastest way to donate your LSASS credentials to organized crime. From keystroke‑injection chaos to cloud‑exfiltration shenanigans, this one reminds us that sometimes the real malware was the curiosity we made along the way.*
+
 
 [1]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/Call%20From%20Inside%20the%20Network/Call%20From%20Inside%20the%20Network.md
 [2]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/That's%20Disputable/That's%20Disputable.md
@@ -62,3 +71,4 @@ Let us know what you think! And if somehow you arrived here having never heard o
 [6]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/SSN-onymous%20No%20More-From%20Data%20Broker%20to%20Broke/SSN-onymous%20No%20More%3A%20From%20Data%20Broker%20to%20Broke.md
 [7]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/The%20Great%20Mail%20Fail-%20Third%20Time’s%20Not%20the%20Charm/%20The%20Great%20Mail%20Fail-Third%20Time’s%20Not%20the%20Charm.md
 [8]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Paging%20Dr.%20USB-%20Your%20Extraction%20Is%20Ready/Paging%20Dr.%20USB%3A%20Your%20Extraction%20Is%20Ready.md
+[9]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Special%20Delivery-Plug%20and%20Prey%2C%20Get%20Ransomware/Special%20Delivery%3A%20Plug%20and%20Prey%2C%20Get%20Ransomware.md
