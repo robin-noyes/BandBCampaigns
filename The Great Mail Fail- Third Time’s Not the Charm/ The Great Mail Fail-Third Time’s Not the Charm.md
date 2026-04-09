@@ -28,18 +28,39 @@ Core Deck (v2), Core Deck plus IR Expansion, Cloud Security (v2), ICS/IoT, RedCa
 ### Initial Compromise
 **_Phishing/Out-of-Band Phishing
 This is our "Persistent Pest" card, the timeless art of social engineering—Mailchimp’s attackers clearly kept knocking until someone let them in—repeatedly. The exact medium remains a mystery: sliding into DMs, sending "urgent" Slack messages, or pulling the classic "it’s me, your IT guy" over a phone call, or carrier pigeon… who’s to say. What we do know is that the attackers cast a wide enough net that one unlucky user eventually took the bait, proving once again that humans remain the most ‘versatile’ attack surface in the enterprise.
+* MiTRE
+    - T1566 – Phishing  
+    - T1598 – Spearphishing Voice / SMS / Other Social Engineering  
+    - T1204 – User Execution (Social Engineering)  
+    - T1078 – Valid Accounts  
+    - T1556.003 – Multi‑Factor Authentication Bypass (Social Engineering)  
 
 ### Pivot & Escalate
 **_Overprivileged Group/Local Privilege Escalation_**
 This card represents the classic ‘I got in with one account but let me go ahead and borrow something with actual power’ maneuver. While the initial user may have opened the door, it’s entirely plausible a second, more privileged account did the real heavy lifting—because why stop at one compromised identity when you can upgrade your access like a frequent‑flyer perk. Since "using the internal admin panel like a personal megaphone" isn’t a standard card, we’re betting on the old-school tactic of inbox manipulation to keep their activities—and the replies—hidden in the shadows.
+* MiTRE 
+    - T1213 – Data from Information Repositories  
+    - T1087 – Account Discovery  
+    - T1069 – Permission Group Discovery  
+    - T1098 – Account Manipulation (Use of Existing Privileged Accounts)  
 
 ### C2 & Exfil
 **_Create Inbox Forwarding Rule_**
 While there’s no smoking gun proving the attackers set up a secret mail relay, we know they used internal tools to blast out phishing emails. Since "using the internal admin panel like a personal megaphone" isn’t a standard card, we’re betting on the old-school tactic of inbox manipulation to keep their activities—and the replies—hidden in the shadows.
+* MiTRE
+    - T1537 – Transfer Data to Cloud Account  
+    - T1041 – Exfiltration Over Web Services  
+    - T1071.001 – Application Layer Protocol: Web Protocols  
+    - T1566.002 – Spearphishing via Service  
+    - T1586.002 – Compromise Infrastructure: Email Infrastructure  
 
 ### Persistence
 **_MFA Bypass/Cross-Tenant Access_**
 This card was selected as a nod to persistence techniques, even though nothing in the incident suggests MFA was touched.  Since the attackers successfully strolled into a cross-tenant administration tool like they owned the place, we have to assume they either whispered the right secrets to bypass Multi-Factor Authentication or found a way to hop the fence between accounts without tripping the alarms. It’s a bit of an "educated guess," but it beats assuming they just asked nicely.
+* MiTRE
+    - T1539 – Steal Web Session Cookie  
+    - T1550.004 – Use of Web Session Cookie  
+    - T1078 – Valid Accounts (Re‑use for Persistence)  
 
 ## Procedures that Reveal the Attack Chain
 ![](GreatMailFail_Procedures.png)
@@ -126,10 +147,16 @@ This card was selected as a nod to persistence techniques, even though nothing i
     - The experience level of the night shift was too low to recognize that a chat message asking for a "session token" was a breach. They mistook the sophisticated social engineering for a standard "ticket escalation" and actually helped the attacker bypass the initial login hurdles.
 
 ## Game Start
-
+You arrive for work, with your typical zeal to jump into the dashboards and see how things are going.  Suddenly there is a spike in password-reset requests and support tickets from customers reporting suspicious logon events for multiple customer profiles; the rapid successsion is far faster than normal workflows support.  You begin receiving complaints from customers about phishing emails coming from our platform/domain and appearing to originate from legitimate accounts. The SIEM is sitting in the corner, quietly contemplating the future but nothing is showing as out of the normal routine.  We need to dive in and see what is going on.
 
 ## Game Conclusion
+After a full investigation, your team confirms that the incident stemmed from a targeted social‑engineering campaign against a small number of employees with access to internal support tools. The attackers successfully convinced at least one employee to disclose or approve access to their account, allowing unauthorized entry into internal administrative systems.
 
+Once inside, the attacker used legitimate employee permissions to view customer account data and identify high‑value targets. Several customer accounts were accessed, and a subset of them were used to launch highly convincing phishing campaigns that appeared to originate from trusted, legitimate sources. Because the activity blended in with normal support workflows, early detection was difficult.
+
+No malware was deployed, no infrastructure was breached, and no system vulnerabilities were exploited. The attacker relied entirely on social engineering, credential misuse, and the inherent trust placed in internal tools. While the intrusion was contained and the compromised accounts were secured, the incident exposed gaps in identity protection, MFA resilience, internal monitoring, and employee security awareness.
+
+The attacker’s access has been revoked, but the downstream impact,including customer phishing exposure and reputational damage, will take time to fully assess. The investigation concludes with a clear takeaway: even mature organizations can be compromised when attackers target people instead of systems.
 
 ## Lessons Learned and Mitigating Controls
 - Zero trust and least privilege: Restrict support tool access to narrowly scoped roles, with per-customer or per-function segmentation and just‑in‑time elevation rather than broad, persistent access.
