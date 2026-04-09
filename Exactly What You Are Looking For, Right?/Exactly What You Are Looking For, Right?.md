@@ -13,31 +13,67 @@ Huntress Exp,  Core V2.2
 
 ### Initial Compromise
 _**Public Facing Database Compromise**_
-Security researchers as well as threat actors use tools of the trade for similar purposes.  In this case, a security researcher found the publicly available ElasticSearch database readily available for anyone to access using Shodan searches.
+Security researchers and threat actors often use the same tools — the difference is usually intent and whether someone writes a blog post afterward. In this case, a researcher stumbled across an ElasticSearch database sitting wide open on the internet, indexed neatly by Shodan like it was proud of itself. No authentication, no firewall, no nothing. Just a giant “Welcome! Please enjoy our 340 million records” sign for anyone curious enough to look. It’s the digital equivalent of leaving your front door open, lights on, and a stack of mail on the counter.
+MiTRE
+- T1595.002 – Active Scanning: Vulnerability Scanning  
+- T1190 – Exploit Public-Facing Application  
+- T1589.002 – Gather Victim Identity Information: Personal Details  
+
 ### Pivot & Escalate
 _**Internal Password Spray**_
-There is no evidence of a breach of Exactis but this card was selected as the data available could easily be used to pivot to a spear phishing or out-of-bands phishing.
+There’s no evidence anyone broke into Exactis systems directly, but the exposed data would make a password sprayer’s heart grow three sizes. With millions of email addresses and personal details, crafting believable phishing lures or guessing reused passwords becomes almost too easy. Humans are creatures of habit — we reuse passwords, we click things we shouldn’t, and we absolutely believe emails that start with “Quick question…” This card represents the very real next step someone could take with that much personal data in hand. 
+MiTRE
+- T1110.003 – Brute Force: Password Spraying  
+- T1566.001 – Phishing: Spearphishing Attachment
+
 ### C2 & Exfil
 _**HTTPS as Exfil**_
-Although there was no C2 identified, as the data was publicly available, this card was selected as the method of download and access.
+There was no command‑and‑control here — the data didn’t need to be stolen so much as downloaded. The entire database was accessible over HTTPS like a public file share. Anyone with a browser, a script, or a pulse could pull down gigabytes of personal information without tripping a single alarm. It’s less “exfiltration” and more “open buffet,” but HTTPS still counts as the method of transfer, even if the only “malware” involved was curiosity.
+MiTRE
+- T1048.002 – Exfiltration Over Asymmetric Encrypted Non-C2 Protocol
+- T1530 – Data from Cloud Storage Object  
+
 ### Persistence
 _**New User Added**_
-This event has not confirmed to have been the result of an attack, but with the volume of data available it could have been used to reset credentials of privilege users with the intention of making new user accounts.
+While there’s no indication anyone used this data to break into internal systems, the sheer volume of personal information exposed could easily support credential resets, impersonation, or account creation elsewhere. With enough details about someone — their habits, their kids, their pets, their interests — resetting an account becomes disturbingly easy. Creating a new user afterward is just the cherry on top. It’s the kind of persistence that doesn’t require hacking tools, just a frighteningly complete picture of a person’s life.
+MiTRE
+- T1136.001 – Create Account: Local Account 
+- T1136.002 – Create Account: Domain Account  
 
 ## Procedures that Reveal the Attack Chain
 
 ![](Procedures_Exactly.png)
 
+* User and Entity Behavior Analytics (EUBA)
+	- D3-BEHAVIOR-ANALYSIS
+	- D3-IDENTITY-ANALYTICS
+	- D3-AUTHENTICATION-HARDENING
+	- D3-ACCESS-MONITORING
+* Security Information and Even Management (SIEM) Log Analysis
+	- D3-ANALYZE-LOGS
+	- D3-HOST-BASED-SENSOR
+	- D3-NETWORK-TRAFFIC-ANALYSIS
+	- D3-APPLICATION-HARDENING
+* Shodan Review
+	- D3-SCANNING-DEFENSE
+	- D3-EXTERNAL-EXPOSURE-IDENTIFICATION
+	- D3-ACCESS-CONTROL-HARDENING
+	- D3-ASSET-INVENTORY
+* Network Thread Hunting - Zeek/RITA Analysis
+	- D3-NETWORK-TRAFFIC-ANALYSIS
+	- D3-FLOW-ANALYSIS
+	- D3-FORENSIC-COLLECTION
+	- D3-EXECUTION-INSPECTION
+
 ## Written Procedures
 * User and Entity Behavior Analytics (EUBA)  
-	* This card was included because it does not discover any items in the attack chain. Just like in real life, just because you're good at something, doesn't mean it will help you. EUBA tools are typically agent based and installed on company assets to provide telemetry around that system and user.   In the case of Exactis, the attack actions took place  through non-managed devices, directly over the internet.
+	* This card was included because it does not discover any items in the attack chain. Just like in real life, just because you're good at something, doesn't mean it will help you. EUBA tools are typically agent based and installed on company assets to provide telemetry around that system and user.   In the case of Exactis, the attack actions took place  through non-managed devices, directly over the internet. Think of UEBA as that coworker who notices when you’re acting “a little different today.” Maybe you logged in at 3 AM, maybe you accessed a system you’ve never touched before, or maybe you suddenly downloaded half the HR directory. UEBA doesn’t judge — it just raises an eyebrow and taps you on the shoulder. But only if it’s been trained well… otherwise it’s just the intern who panics every time someone works past 5 PM.
 * Security Information and Even Management (SIEM) Log Analysis
-	* This procedure was selected as it can detect Initial Compromise and Pivot and Escalate.  Elastic audit or search logs could have shown evidence of access coming from external IPs.  Community articles appear to indicate the adversary may have changed IP's, used VPN or cloud hosting for access attempts, as well as scripting access activity.  It is possible that user-agent statistics may also have shown this activity.  Web application telemetry may have shown accessing other distant family trees that were not typical for the customer. 
+	* This procedure was selected as it can detect Initial Compromise and Pivot and Escalate.  Elastic audit or search logs could have shown evidence of access coming from external IPs.  Community articles appear to indicate the adversary may have changed IP's, used VPN or cloud hosting for access attempts, as well as scripting access activity.  It is possible that user-agent statistics may also have shown this activity.  Web application telemetry may have shown accessing other distant family trees that were not typical for the customer. SIEM is the SOC’s version of a giant scrapbook — every login, every query, every weird little blip gets glued in somewhere. When something goes wrong, analysts flip through the pages looking for the moment the story took a turn. Sometimes the SIEM gives you exactly what you need. Other times it’s like, “Oh, you wanted that log source? Yeah… we didn’t onboard that yet.”
 * Shodan Review
-	* This procedure was selected as it is used by adversaries, researchers, and should be used by organizations to see what internet exposure they may have.  This tool should be included as part of any threat/vulnerability scanning performed by the organization.
-
+	* This procedure was selected as it is used by adversaries, researchers, and should be used by organizations to see what internet exposure they may have.  This tool should be included as part of any threat/vulnerability scanning performed by the organization. Shodan is basically Google for “things you wish weren’t on the internet.” It’s the digital equivalent of walking around your house checking which doors and windows you accidentally left open. Sometimes you find nothing. Sometimes you find the back door wide open, the lights on, and a sign that says “Welcome, please don’t steal anything.”
 * Network Thread Hunting - Zeek/RITA Analysis
-	* This procedure was selected as it can detect and/or recreate traffic, files, etc.  The download of the zip file and connections from previously unknown IPs accessing administration portals could have been used to detect this incident ahead of time. 
+	* This procedure was selected as it can detect and/or recreate traffic, files, etc.  The download of the zip file and connections from previously unknown IPs accessing administration portals could have been used to detect this incident ahead of time. If SIEM is the scrapbook, Zeek/RITA is the security camera footage. It doesn’t always show you what happened, but it shows you who walked where, when, and for how long. It’s great for spotting the “why is this server suddenly talking to that country?” moments. And when you’re trying to figure out whether someone downloaded a little or a lot… Zeek is the friend who says, “Oh, they took everything.”
 
 
 ## Procedure Success (explanations of why it worked)
