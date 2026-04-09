@@ -15,9 +15,10 @@ Huntress Exp,  Core V2.2
 _**Public Facing Database Compromise**_
 Security researchers and threat actors often use the same tools — the difference is usually intent and whether someone writes a blog post afterward. In this case, a researcher stumbled across an ElasticSearch database sitting wide open on the internet, indexed neatly by Shodan like it was proud of itself. No authentication, no firewall, no nothing. Just a giant “Welcome! Please enjoy our 340 million records” sign for anyone curious enough to look. It’s the digital equivalent of leaving your front door open, lights on, and a stack of mail on the counter.
 MiTRE
-- T1595.002 – Active Scanning: Vulnerability Scanning  
 - T1190 – Exploit Public-Facing Application  
 - T1589.002 – Gather Victim Identity Information: Personal Details  
+- T1595.002 – Active Scanning: Vulnerability Scanning (Shodan/BinaryEdge) 
+- T1593 – Search Open Websites/Domains
 
 ### Pivot & Escalate
 _**Internal Password Spray**_
@@ -31,6 +32,7 @@ _**HTTPS as Exfil**_
 There was no command‑and‑control here — the data didn’t need to be stolen so much as downloaded. The entire database was accessible over HTTPS like a public file share. Anyone with a browser, a script, or a pulse could pull down gigabytes of personal information without tripping a single alarm. It’s less “exfiltration” and more “open buffet,” but HTTPS still counts as the method of transfer, even if the only “malware” involved was curiosity.
 MiTRE
 - T1048.002 – Exfiltration Over Asymmetric Encrypted Non-C2 Protocol
+- T1071.001 – Application Layer Protocol: Web Protocols
 - T1530 – Data from Cloud Storage Object  
 
 ### Persistence
@@ -45,25 +47,29 @@ MiTRE
 ![](Procedures_Exactly.png)
 
 * User and Entity Behavior Analytics (EUBA)
+	- D3-ACCESS-MONITORING
+	- D3-ANOMALY DETECTION
+	- D3-AUTHENTICATION-HARDENING
 	- D3-BEHAVIOR-ANALYSIS
 	- D3-IDENTITY-ANALYTICS
-	- D3-AUTHENTICATION-HARDENING
-	- D3-ACCESS-MONITORING
 * Security Information and Even Management (SIEM) Log Analysis
 	- D3-ANALYZE-LOGS
+	- D3-AUDT – Audit Log Aggregation
 	- D3-HOST-BASED-SENSOR
 	- D3-NETWORK-TRAFFIC-ANALYSIS
 	- D3-APPLICATION-HARDENING
 * Shodan Review
-	- D3-SCANNING-DEFENSE
-	- D3-EXTERNAL-EXPOSURE-IDENTIFICATION
 	- D3-ACCESS-CONTROL-HARDENING
 	- D3-ASSET-INVENTORY
+	- D3-ATTACK-SERFACE-MANAGEMENT
+	- D3-EXTERNAL-EXPOSURE-IDENTIFICATION
+	- D3-SCANNING-DEFENSE
 * Network Thread Hunting - Zeek/RITA Analysis
-	- D3-NETWORK-TRAFFIC-ANALYSIS
+	- D3-EXECUTION-INSPECTION
+	- D3-EXFILTRATION DETECTION
 	- D3-FLOW-ANALYSIS
 	- D3-FORENSIC-COLLECTION
-	- D3-EXECUTION-INSPECTION
+	- D3-NETWORK-TRAFFIC-ANALYSIS
 
 ## Written Procedures
 * User and Entity Behavior Analytics (EUBA)  
