@@ -84,7 +84,7 @@ The adversary continued to access the 23andMe website, using multiple different 
 	* This procedure was selected as it can detect Living off the Land/Hiding in Plain Site.  However, in this case, it is a very loose interpretation of valid account use from multiple IPs, location, or times of day. 
 
 
-## Procedure Success (explanations of why it worked)
+## Procedure Success 
 ### General Reasons
 Technical
 	- VarProcedure found unauthorized/suspicious evidence of IP/commands/software/log deletion on the system.  This was found by correlating logs from multiple data sets EDR/Windows Logs/Firewall/Proxy/Server/UberAgent.  This allowed for finding patient zero to use in subsequent searches.

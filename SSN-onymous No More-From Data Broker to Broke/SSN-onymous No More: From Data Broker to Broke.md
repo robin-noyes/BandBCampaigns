@@ -9,12 +9,9 @@ A sister site, RecordsCheck.net, published a “members.zip” archive containin
   
 Some reporting points to misconfigured cloud storage (e.g. public S3 buckets) and disabled or lax safeguards in the cloud environment, which would allow unrestricted access to sensitive data.
 Even default protections appear to have been disabled to facilitate development, yet never reenabled in production.   These failures underscore how data brokers, which aggregate highly sensitive information, often lack the robust protections expected of financial or healthcare institutions.  
-  
-In short, the NPD breach illustrates how systemic failures in credential hygiene, data encryption, cloud security posture, monitoring, third-party oversight, and incident transparency can combine to magnify damage. For future resilience, organizations (especially data brokers) must adopt a foundational zero trust approach, enforce strong access and encryption controls, continuously monitor for anomalous behavior, and maintain robust vendor security oversight.
-
 
 ## Tags
-Databrokers, compromised credentials, exposed backups, unencrypted databases, National Private Data, recordscheck.net
+Databrokers, compromised credentials, exposed backups, unencrypted databases, National Private Data, recordscheck.net 
 ## Compatible Decks
 Huntress, Cloud, DenSecure, 
 
@@ -26,22 +23,32 @@ Huntress, Cloud, DenSecure,
 ![](Scenario_SSN-onymous_v2.png)
 
 ### Initial Compromise
-**Publicly Exposed Secret Key_**
-This card was selected as reports indicate misconfiguration and/or lack security allowing unrestricted access to data.
+**Publicly Exposed Secret Key**
+This card was selected as reports indicate misconfiguration and/or lack security allowing unrestricted access to data. \
 **Unauthorized Cloud Access** This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
-
+* MiTRE 
+	- T1595 – Active Scanning
+	- T1530 – Data from Cloud
+	- T1593 – Search Open Websites/Domains
+	- T1078 – Valid Accounts
 
 ### Pivot & Escalate
 **Credential Exposed in Environment Variables**  This card was selected as a loose interpretation of a zip file containing credentials being available for download, without password, on the sister site of NPD.  
-**Misconfigured Container Image Compromise**
-This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
+**Misconfigured Container Image Compromise** This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
+* MiTRE
+	- T1552.001 – Credentials in Files
+	- T1552 – Unsecured Credentials
 
 ### C2 & Exfil
-**Unauthorized Filesharing Utility** As there is no solid information on how the data was exfiltrated, it is assumed that a fileshare utility was used such as ShareFile,  WeTransfer, or Mega. 
-**Cloud-Based Services as Exfile** This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
+**Unauthorized Filesharing Utility** As there is no solid information on how the data was exfiltrated, it is assumed that a fileshare utility was used such as ShareFile,  WeTransfer, or Mega. \
+**Cloud-Based Services as Exfil** This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
+* MiTRE
+	- T1567.002 – Exfiltration to Cloud Storage 
+	- T1048.002 – Exfiltration Over Asymmetric Encrypted Network
+	- T1071.001 – Application Layer Protocol: Web Protocols
 
 ### Persistence
-**Malicious Services** There is no evidence that a malicious service was crated but this card was selected to make the game play interesting. 
+**Malicious Services** There is no evidence that a malicious service was crated but this card was selected to make the game play interesting. \
 **Secondary Access Key Creation** This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
 
 
@@ -50,16 +57,24 @@ This card was selected to give a more cloud specific feel to the scenario given 
 
 
 ## Written Procedures
- SIEM
-* Log all the things!  We should be able to find some kind of needle in this haystack.  Seriously though, we should have some logs to tell us what was going on.
+* SIEM
+	* Log all the things!  We should be able to find some kind of needle in this haystack.  Seriously though, we should have some logs to tell us what was going on.
+	- D3‑ANLZ – Log Analysis
+	- D3‑AUDT – Audit Log Aggregation
 * EUBA
 	* This card was selected as a default but has the potential to identify system and user anomalies.
+	- D3‑BEHA – Behavior Analytics
+	- D3‑ANML – Anomaly Detection
 * Cloud Event Log Analysis
 	* Presuming that cloud access was used, this should show access from unknown IPs or accessing new datasets.
+	- D3‑CLDL – Cloud Logging 
+	- D3‑ACCT – Account Monitoring
+	- D3‑EXFL – Exfiltration Detection
 * Endpoint Security Protection Analysis
 	* There is no data to confirm this would have any impact on the scenario but this card was selected as most enterprises have a some form of Endpoint Security Protection Analysis, which is being loosely interpreted as an EDR.  
 
-## Procedure Success (explanations of why it worked)
+## Procedure Success 
+### General Reasons
  - Technical
 	- VarProcedure succeeded because the agent had been installed for a sufficient period, allowing it to collect enough telemetry to establish a solid baseline for detection.
 	- VarProcedure worked efficiently due to appropriate permissions and full visibility across the environment, with no delays caused by approval workflows or access issues.
@@ -128,7 +143,7 @@ This is the cloud equivalent of elves fixing your shoes overnight.
 
 - Financial 
 	- Due to a maintenance freeze for the holidays,  the capability to update/log/contain/enable a feature on the system/tool requires VP approval.
-	-  Underfunded multi‑region logging architectures delay evidence availability .
+	- Underfunded multi‑region logging architectures delay evidence availability .
 	- The company bought the lowest tier log volume and we have exceeded our license.  
 
 - Political 
@@ -141,9 +156,16 @@ This is the cloud equivalent of elves fixing your shoes overnight.
 
 
 ## Game Start
-
+It is early in the quarter when your security team is contacted by a third party, stating they have observed unusual chatter on underground forums about your companies data. A threat actor claims to possess a massive dataset containing sensitive personal information — including full identity records — allegedly taken from an unnamed data aggregation service.  Your cloud dashboards show no alerts. Your SIEM is quiet. Nothing internally indicates a breach. But external reporting suggests that a large volume of sensitive data may already be circulating online.
 
 ## Game Conclusion
+After days of investigation, your team finally pieces together what happened.
+
+A large collection of sensitive personal records ( including identity data, background‑check information, and other high‑value attributes) had been stored in a cloud environment with minimal safeguards. A related web property exposed a downloadable archive containing plaintext credentials, environment variables, and source code. Those credentials provided attackers with the ability to move deeper into the environment and access additional datasets.
+
+Cloud storage protections that should have been enabled by default were misconfigured or disabled entirely. Logging was inconsistent across regions. Some systems had no monitoring at all. By the time the exposure was discovered, a massive volume of data had already been accessed and exfiltrated through cloud‑based services.
+
+There is no clear evidence of persistence, but the lack of visibility makes it impossible to rule out. What is certain is that the data is now circulating publicly, and the organization responsible for safeguarding it is facing severe operational, legal, and reputational fallout.
 
 
 ## Lessons Learned and Mitigating Controls
