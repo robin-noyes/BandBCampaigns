@@ -1,5 +1,4 @@
-## Expansion Deck V1.2
-### Released 2021
+## Expansion Deck V1
 **Initial Compromise** 
 - Physical Access
 - Supply Chain Attack
@@ -14,6 +13,7 @@
 
 **C2 and Exfil**
 - Exfil over Physical Medium
+- Traffic Signaling (only exists in this deck)
 
 **Persistance**
 - Malware Injection Into Client Software
@@ -36,7 +36,6 @@
 - Luck of the Soc
 
 **Consultants**
-- Chris Brenton
 - Jorge Orchilles
 - Robert M. Lee
 - Alethe Denis
@@ -46,3 +45,27 @@
 - Tim Medin
 - Alissa Torres
 - Deter Smith
+
+
+## Expansion Deck V1.2
+### Released 11-2022
+**Initial Compromise** 
+- No changes
+**Pivot and Escalate**
+- No changes
+
+**C2 and Exfil**
+- Removes Traffic Signaling
+
+**Persistance**
+- No changes
+**Injects**
+- No changes
+
+**Procedures:** 
+- Physical Security Review
+
+**Consultants:** 
+- Chris Benton 
+- Richard Meno 
+- Richard Phung

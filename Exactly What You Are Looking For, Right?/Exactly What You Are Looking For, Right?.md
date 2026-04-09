@@ -76,7 +76,7 @@ MiTRE
 	* This procedure was selected as it can detect and/or recreate traffic, files, etc.  The download of the zip file and connections from previously unknown IPs accessing administration portals could have been used to detect this incident ahead of time. If SIEM is the scrapbook, Zeek/RITA is the security camera footage. It doesn’t always show you what happened, but it shows you who walked where, when, and for how long. It’s great for spotting the “why is this server suddenly talking to that country?” moments. And when you’re trying to figure out whether someone downloaded a little or a lot… Zeek is the friend who says, “Oh, they took everything.”
 
 
-## Procedure Success (explanations of why it worked)
+## Procedure Success 
 ### General Reasons
 Technical
 	- VarProcedure operated successfully because agents and logging mechanisms were not only installed but also thoroughly validated for alert logic, data quality, and completeness.
@@ -94,13 +94,29 @@ Technical
 	- VarProcedure worked successfully because the contractor’s hours were managed proactively, and internal staff were trained to continue deployment seamlessly.
 	- VarProcedure worked successfully because the approval team established remote processes, enabling decisions even while attending conferences.
 
+## Procedure Success Explanations
+- Technical
+	- The procedure worked because the tooling was actually deployed, configured, and sending the right telemetry — a rare moment where agents, logs, and dashboards all decided to behave like a functional ecosystem instead of a group project gone wrong.
+	- The procedure succeeded because all the right systems, subnets, and data sources were included from the start, avoiding the classic “wait… that server is ours too?” discovery halfway through the investigation.
+
+- Financial
+	- The procedure performed well because leadership funded the full feature set instead of the “lite” version that removes the exact capability everyone needs during an incident.
+	- The procedure worked because the team had recently completed training, meaning someone actually knew how to use the tool beyond clicking the default dashboard and hoping for the best.
+
+- Political
+	- The procedure succeeded because the security team, project owner, and business unit aligned early, preventing the usual turf battles over who owns what and whether it will “impact production.”
+	- The procedure was applied consistently across all devices — even VIP endpoints — because leadership agreed that security controls aren’t optional accessories like heated seats.
+
+- Personnel
+- The procedure worked because staffing was stable, the handoff between teams was smooth, and no one was out sick during the critical deployment window.
+- The procedure succeeded because the approval chain had remote processes in place, allowing decisions to move forward even when half the team was traveling or stuck in meetings that should’ve been emails.
 
 
 ## Procedure Failures
 ### General Reasons
 - Technical
-	-  VarProcedure did not detect the attack because the agent could not be deployed on the OS/Server/Laptop/Endpoint due to unsupported/legacy/criticality of the asset.
-	- VarProcedure did not work because the appliance/server is undergoing patch maintenance and is unavailable.
+	- VarProcedure did not detect the attack because the agent could not be deployed on the OS/Server/Laptop/Endpoint due to unsupported/legacy/criticality of the asset or “that one box no one touches because it might break.”.
+	- VarProcedure didn’t work because the appliance or server was down for maintenance, patching, or an upgrade that mysteriously takes three times longer than planned.
 - Financial
 	- VarProcedure did not work because the tool/service features that would have detected it were part of the more expensive package that was not purchased.
 	- VarProcedure did not work because of competing and conflicting projects would have negated/changed where the tool/logging should be implemented.

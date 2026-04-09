@@ -50,7 +50,7 @@
 - Security Information and Event Management (SIEM) Log Analysis
 - Isolation
 - Endpoint Security Protection Analysis
-- Internal Segmentation
+- Internal Segmentation (only exists in this deck)
 
 **Injects**
 - Honeypots Deployed
@@ -68,9 +68,9 @@
 There are no consultant cards in the Core Decks
 
 ### Core Deck V2
-#### Released 2021
+#### Released 08-2021
 **C2 and Exfil**
--  Removed Internal Segmentation
+- Removed _Internal Segmentation_
 - Memory Analysis
 - Cyber Deception
 
@@ -78,19 +78,19 @@ There are no consultant cards in the Core Decks
 - Removed *Management has Just Approved the Release of a New Procedure*
 
 ### Core Deck V2.2
-#### Released 2022
-No changes from V2.2
+#### Released 11-2022
+- No changes from V2
 
 ### Core Deck V3
-#### Released 2025
+#### Released 06-2025
 **Initial Compromise**
-- Same as V1 with minor renames
-- Compromised Trusted Relationship
-- External Password Spray
-- Compromised Web Server 
+- Renames  _Trusted Relationship_ to _Compromised Trusted Relationship_ , _Password Spray_ to _External Password Spray_ , and _Web Server Compromise_ to _Compromised Web server_.  \
+
+**Pivot and Escalate**
+_ Renames _Credential Stuffing_ to _Credential Harvesting_ \
 
 **C2 and Exfil**
-- Cloud-Based Services as Exfil
+- Renames _Gmail, Tumblr, SaleseForce, Twitter/X as exfil_ to _Cloud-Based Services as Exfil_ 
 
 **Procedures**
 - Same as V2 plus
@@ -98,8 +98,25 @@ No changes from V2.2
 - Cloud Event Log Analysis
   
 **Injects**
-- Removed *Honeypots Deployed*, *Take One Procedure Card Away*, 
-*Give the Defenders a Random Procedure Card*, and *Lead Handler Has a Baby, Takes FMLA Leave* . 
+- Removed _Honeypots Deployed_, _Take One Procedure Card Away_, _Give the Defenders a Random Procedure Card_, and _Lead Handler Has a Baby, Takes FMLA Leave_ . 
 - Analyst Returns from IR Training
 - Policy?  What Policy?
 - Luck of the Soc
+
+### Core Deck V3.1
+#### Released 12-2025
+**Initial Compromise**
+- No changes 
+**Pivot and Escalate**
+- No changes 
+**C2 and Exfil**
+- No changes 
+
+**Persistance**\
+- Renames _DLL Attacks_ to _Dynamic Link Library Hijacking_ , _Evil Firmware_ to _Malicious Firmware_ , and _Malicious Service/Just Malware_ to _Malicious Service_ 
+
+**Procedures**
+- introduces _Competative Price_ amounts on the cards.
+  
+**Injects**
+- No changes 
