@@ -45,12 +45,22 @@ The adversary continued to access the 23andMe website, using multiple different 
 	* Pivot and Escalate--Credential Stuffing; Query of Cloud API
 	* C2 &Exfil--Cloud Service as Exfil 
 	* Persistence--Living off the Land; Hiding in Plain Sight
+	MiTRE
+	  	* D3-ANLZ – Log Analysis
+		* D3-AUDT – Audit Log Aggregation
 * Cloud Event Log Analysis
 	* Persistence--Living off the Land; Hiding in Plain Sight
+	MiTRE
+		* D3-CLDL – Cloud Logging
+		* D3-ACCT – Account Monitoring
+		*  D3-EXFL – Exfiltration Detection
 * Server Analysis
 	* Initial Compromise--Password Spray; Credential Stuffing
 	* Pivot and Escalate--Credential Stuffing; Query of Cloud API
 	* C2 &Exfil--Cloud Service as Exfil 
+	MiTRE
+		* D3-DSRC – Data Source Analysis
+		* D3-EXFL – Exfiltration Detection
 * Firewall Log Review (loosely interpreted as WAF)
 	* Initial Compromise--Password Spray; Credential Stuffing
 	* Pivot and Escalate--Credential Stuffing; Query of Cloud API
@@ -63,6 +73,9 @@ The adversary continued to access the 23andMe website, using multiple different 
 ## Written Procedures
 * User and Entity Behavior Analytics (EUBA)  
 	* This card was included because it does not discover any items in the attack chain. Just like in real life, just because you're good at something, doesn't mean it will help you. EUBA tools are typically agent based and installed on company assets to provide telemetry around that system and user.   In the case of 23andMe, the attack actions took place  through valid customer accounts, from non-managed devices.
+	MiTRE
+		* D3-BEHA – Behavior Analytics
+		* D3-ANML – Anomaly Detection
 * Security Information and Even Management (SIEM) Log Analysis
 	* This procedure was selected as it can detect Initial Compromise and Pivot and Escalate.  Community articles appear to indicate the adversary may have changed IP's, used VPN or cloud hosting for access attempts, as well as scripting access activity.  It is possible that user-agent statistics may also have shown this activity.  Web application telemetry may have shown accessing other distant family trees that were not typical for the customer. 
 * Cloud Event Log Analysis
