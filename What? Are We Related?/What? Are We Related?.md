@@ -1,4 +1,3 @@
-
 # What? We Are Related
 ## 23andMe
 ### Author: Robin Noyes
@@ -23,20 +22,36 @@ Core Deck V2,Cloud Security (variation 2), RedCanary, Huntress
 
 ### Initial Compromise
 **Password Spray/ Credential Stuffing**
-Hackers used previous password dumps to perform a credential stuffing attack against 14,000 different accounts.  We humans are creatures of habit and tend to be lazy.  Therefore those outside of cyber security (and probably some in it) often use the same credentials across multiple sites and accounts.
+Hackers used previous password dumps to perform a credential stuffing attack against 14,000 different accounts.  We humans are creatures of habit and tend to be lazy.  Therefore those outside of cyber security (and probably some in it) often use the same credentials across multiple sites and accounts.\
+MITRE ATT&CK
+- T1110.003 – Credential Stuffing
+- T1110.001 – Password Guessing (if spray activity occurred)
+- T1078 – Valid Accounts (use of legitimate credentials)
 
 ### Pivot & Escalate
 **Credential Stuffing/ Query of APIs**
-Once the adversary obtains access to the website/application, they utilize the opt-in 'DNA Sharing' feature to access and download family tree information.  The family-tree option allows the adversary to view relationships and other data, of other customers, without accessing their accounts.
+Once the adversary obtains access to the website/application, they utilize the opt-in 'DNA Sharing' feature to access and download family tree information.  The family-tree option allows the adversary to view relationships and other data, of other customers, without accessing their accounts.\
+MITRE ATT&CK
+- T1110.003 – Credential Stuffing 
+- T1190 – Exploit Public‑Facing Application 
+- T1596.001 – Search Open Websites/Domains 
 
 ### C2 & Exfil
 **Cloud Services as Exfil**
-Although there it has not been confirmed that a C2 was used, the adversary used the account access to scrap data from the owner of the account as well as any shared family tree information.  This may have been through exporting the data once the account was accessed or possibly through some form of scripted API access.
+Although there it has not been confirmed that a C2 was used, the adversary used the account access to scrap data from the owner of the account as well as any shared family tree information.  This may have been through exporting the data once the account was accessed or possibly through some form of scripted API access.\
+MITRE ATT&CK
+- T1567.002 – Exfiltration to Cloud Storage
+- T1020 – Automated Exfiltration
+- T1602.002 – Data from Information Repositories: Web‑Based Repositories (API‑driven data retrieval)
+
 
 ### Persistence
 **Living off the Land/Hiding in Plain SighSight**
-The adversary continued to access the 23andMe website, using multiple different accounts, presumably over several months, possibly from multiple IP potentially utilizing VPNs or cloud virtualization services.
-
+The adversary continued to access the 23andMe website, using multiple different accounts, presumably over several months, possibly from multiple IP potentially utilizing VPNs or cloud virtualization services.\
+MITRE ATT&CK
+- T1078 – Valid Accounts 
+- T1036 – Masquerading
+- T1090.003 – Proxy: Multi‑Hop Proxy
 
 ## Procedures that Reveal the Attack Chain
 ![](Related_Procedures.png)
