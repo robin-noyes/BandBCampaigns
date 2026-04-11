@@ -38,6 +38,7 @@ This card was selected as reports indicate misconfiguration and/or lack security
 * MiTRE
 	- T1552.001 – Credentials in Files
 	- T1552 – Unsecured Credentials
+	- T1550 – Use of Alternate Authentication Material  
 
 ### C2 & Exfil
 **Unauthorized Filesharing Utility** As there is no solid information on how the data was exfiltrated, it is assumed that a fileshare utility was used such as ShareFile,  WeTransfer, or Mega. \
@@ -50,26 +51,35 @@ This card was selected as reports indicate misconfiguration and/or lack security
 ### Persistence
 **Malicious Services** There is no evidence that a malicious service was crated but this card was selected to make the game play interesting. \
 **Secondary Access Key Creation** This card was selected to give a more cloud specific feel to the scenario given little information on the actual attack vector used. 
-
+* MiTRE
+	- T1567.002 – Exfiltration to Cloud Storage
+	- T1048.002 – Exfiltration Over Asymmetric Encrypted Network
+	- T1071.001 – Application Layer Protocol: Web Protocols
 
 ## Procedures that Reveal the Attack Chain
 ![](Procedures_SSN-onymous.png)
-
+* SIEM
+	* D3‑ANLZ – Log Analysis
+	* D3‑AUDT – Audit Log Aggregation
+* EUBA
+	* D3‑BEHA – Behavior Analytics
+	* D3‑ANML – Anomaly Detection
+* Cloud Event Log Analysis
+	* D3‑CLDL – Cloud Logging 
+	* D3‑ACCT – Account Monitoring
+	* D3‑EXFL – Exfiltration Detection
+* Endpoint Security Protection Analysis
 
 ## Written Procedures
 * SIEM
 	* Log all the things!  We should be able to find some kind of needle in this haystack.  Seriously though, we should have some logs to tell us what was going on.
-	- D3‑ANLZ – Log Analysis
-	- D3‑AUDT – Audit Log Aggregation
+
 * EUBA
 	* This card was selected as a default but has the potential to identify system and user anomalies.
-	- D3‑BEHA – Behavior Analytics
-	- D3‑ANML – Anomaly Detection
+
 * Cloud Event Log Analysis
 	* Presuming that cloud access was used, this should show access from unknown IPs or accessing new datasets.
-	- D3‑CLDL – Cloud Logging 
-	- D3‑ACCT – Account Monitoring
-	- D3‑EXFL – Exfiltration Detection
+
 * Endpoint Security Protection Analysis
 	* There is no data to confirm this would have any impact on the scenario but this card was selected as most enterprises have a some form of Endpoint Security Protection Analysis, which is being loosely interpreted as an EDR.  
 
