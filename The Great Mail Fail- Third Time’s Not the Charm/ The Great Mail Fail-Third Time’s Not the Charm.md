@@ -156,7 +156,7 @@ Once inside, the attacker used legitimate employee permissions to view customer 
 
 No malware was deployed, no infrastructure was breached, and no system vulnerabilities were exploited. The attacker relied entirely on social engineering, credential misuse, and the inherent trust placed in internal tools. While the intrusion was contained and the compromised accounts were secured, the incident exposed gaps in identity protection, MFA resilience, internal monitoring, and employee security awareness.
 
-The attacker’s access has been revoked, but the downstream impact,including customer phishing exposure and reputational damage, will take time to fully assess. The investigation concludes with a clear takeaway: even mature organizations can be compromised when attackers target people instead of systems.
+The attacker’s access has been revoked, but the downstream impact, including customer phishing exposure and reputational damage, will take time to fully assess. The investigation concludes with a clear takeaway: even mature organizations can be compromised when attackers target people instead of systems.
 
 ## Lessons Learned and Mitigating Controls
 - Zero trust and least privilege: Restrict support tool access to narrowly scoped roles, with per-customer or per-function segmentation and just‑in‑time elevation rather than broad, persistent access.
