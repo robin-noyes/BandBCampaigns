@@ -78,5 +78,5 @@ Let us know what you think! And if somehow you arrived here having never heard o
 [7]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/The%20Great%20Mail%20Fail-%20Third%20Time’s%20Not%20the%20Charm/%20The%20Great%20Mail%20Fail-Third%20Time’s%20Not%20the%20Charm.md
 [8]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Paging%20Dr.%20USB-%20Your%20Extraction%20Is%20Ready/Paging%20Dr.%20USB%3A%20Your%20Extraction%20Is%20Ready.md
 [9]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Special%20Delivery-Plug%20and%20Prey%2C%20Get%20Ransomware/Special%20Delivery%3A%20Plug%20and%20Prey%2C%20Get%20Ransomware.md
-[10]    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/ZoHo%3F%20More%20Like%20ZO-NO/ZoHo%3F%20More%20Like%20ZO-NO
-[11]    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/
+[10]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/ZoHo%3F%20More%20Like%20ZO-NO/ZoHo%3F%20More%20Like%20ZO-NO.md/
+[11]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/
