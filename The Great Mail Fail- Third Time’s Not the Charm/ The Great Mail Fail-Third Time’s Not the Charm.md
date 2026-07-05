@@ -65,7 +65,33 @@ This card was selected as a nod to persistence techniques, even though nothing i
 ## Procedures that Reveal the Attack Chain
 ![](GreatMailFail_Procedures.png)
 
+* Cloud Security and Event Management Log Analysis (SIEM)
+	- D3 ANALYZE LOGS-
+	- D3 AUDT Audit Log Aggregation 
+	- D3 HOSTBASED SENSOR
+	- D3 NETWORK TRAFFIC ANALYSIS
+	- D3 APPLICATION HARDENING  
 
+*  User and Entity Behavior
+	- D3 ACCESS MONITORING
+	- D3 ANOMALY DETECTION
+	- D3 AUTHENTICATION HARDENING
+	- D3 BEHAVIOR ANALYSIS
+	- D3 IDENTITY ANALYTICS  
+
+* Cloud Identity and Entitlement Management (CIEM)
+	- D3 ACCESS CONTROL  
+	 - D3 CREDENTIAL HARDENING  
+	- D3 IDENTITY ANALYTICS  
+	- D3 AUTHENTICATION HARDENING  
+	- D3 PERMISSION MANAGEMENT
+
+* Endpoint Security Protection Analysis
+	- D3 EXECUTION PREVENTION
+	- D3 PROCESS ANALYSIS
+	- D3 HOSTBASED SENSOR
+	- D3 MALWARE ANALYSIS
+	- D3 APPLICATION HARDENING
 
 ## Written Procedures
 * Cloud Security and Event Management Log Analysis (SIEM)
