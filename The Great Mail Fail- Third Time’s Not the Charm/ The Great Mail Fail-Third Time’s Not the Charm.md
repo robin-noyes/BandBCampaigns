@@ -26,7 +26,8 @@ Core Deck (v2), Core Deck plus IR Expansion, Cloud Security (v2), ICS/IoT, RedCa
 
 
 ### Initial Compromise
-**_Phishing/Out-of-Band Phishing
+_**Phishing/Out-of-Band Phishing**_
+
 This is our "Persistent Pest" card, the timeless art of social engineering—Mailchimp’s attackers clearly kept knocking until someone let them in—repeatedly. The exact medium remains a mystery: sliding into DMs, sending "urgent" Slack messages, or pulling the classic "it’s me, your IT guy" over a phone call, or carrier pigeon… who’s to say. What we do know is that the attackers cast a wide enough net that one unlucky user eventually took the bait, proving once again that humans remain the most ‘versatile’ attack surface in the enterprise.
 * MiTRE
     - T1566 – Phishing  
@@ -36,7 +37,8 @@ This is our "Persistent Pest" card, the timeless art of social engineering—Mai
     - T1556.003 – Multi‑Factor Authentication Bypass (Social Engineering)  
 
 ### Pivot & Escalate
-**_Overprivileged Group/Local Privilege Escalation_**
+_**Overprivileged Group/Local Privilege Escalation**_
+
 This card represents the classic ‘I got in with one account but let me go ahead and borrow something with actual power’ maneuver. While the initial user may have opened the door, it’s entirely plausible a second, more privileged account did the real heavy lifting—because why stop at one compromised identity when you can upgrade your access like a frequent‑flyer perk. Since "using the internal admin panel like a personal megaphone" isn’t a standard card, we’re betting on the old-school tactic of inbox manipulation to keep their activities—and the replies—hidden in the shadows.
 * MiTRE 
     - T1213 – Data from Information Repositories  
@@ -45,7 +47,8 @@ This card represents the classic ‘I got in with one account but let me go ahea
     - T1098 – Account Manipulation (Use of Existing Privileged Accounts)  
 
 ### C2 & Exfil
-**_Create Inbox Forwarding Rule_**
+_**Create Inbox Forwarding Rule**_
+
 While there’s no smoking gun proving the attackers set up a secret mail relay, we know they used internal tools to blast out phishing emails. Since "using the internal admin panel like a personal megaphone" isn’t a standard card, we’re betting on the old-school tactic of inbox manipulation to keep their activities—and the replies—hidden in the shadows.
 * MiTRE
     - T1537 – Transfer Data to Cloud Account  
@@ -55,7 +58,8 @@ While there’s no smoking gun proving the attackers set up a secret mail relay,
     - T1586.002 – Compromise Infrastructure: Email Infrastructure  
 
 ### Persistence
-**_MFA Bypass/Cross-Tenant Access_**
+_**MFA Bypass/Cross-Tenant Access**_
+
 This card was selected as a nod to persistence techniques, even though nothing in the incident suggests MFA was touched.  Since the attackers successfully strolled into a cross-tenant administration tool like they owned the place, we have to assume they either whispered the right secrets to bypass Multi-Factor Authentication or found a way to hop the fence between accounts without tripping the alarms. It’s a bit of an "educated guess," but it beats assuming they just asked nicely.
 * MiTRE
     - T1539 – Steal Web Session Cookie  

@@ -100,8 +100,8 @@ T1546.003 – WMI Event Subscription
 **_Technical_**
 - Weak external monitoring ensures attackers enjoy the “all‑inclusive resort” experience on exposed systems.
 - Patch cycles move at the speed of continental drift, giving vulnerabilities time to settle down and start families.
- - Logging exists, but only in the philosophical sense — not in the “actually captures anything useful” sense.
- - Segmentation is more of a suggestion than a design principle, allowing attackers to tour the network like a hop‑on hop‑off bus.
+- Logging exists, but only in the philosophical sense — not in the “actually captures anything useful” sense.
+- Segmentation is more of a suggestion than a design principle, allowing attackers to tour the network like a hop‑on hop‑off bus.
 
 _**Financial**_
 - Budget approvals require a pilgrimage through seven committees and a fiscal alignment ritual.
@@ -111,7 +111,7 @@ _**Financial**_
 
 _**Political**_
 - No one owns the vulnerable system, but everyone agrees it’s someone else’s problem.
- - Inter‑team communication resembles diplomatic negotiations between rival kingdoms.
+- Inter‑team communication resembles diplomatic negotiations between rival kingdoms.
 - Security exceptions are granted faster than security controls are implemented.
 - Leadership prioritizes uptime over patching, because “downtime is visible, breaches are theoretical.”
 
