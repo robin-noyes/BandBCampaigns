@@ -19,21 +19,61 @@ Core V3, Expansion ,Datadog,Densecure, ICS/IOT
 ### Initial Compromise
 **Insider Threat**
 In order for any business to run, you need employees.  However, over the last 15 years 6300+ incidents have been attributed to those trusted insiders doing everything from selling corporate secrets, working with foreign governments, committing fraud or straight up theft to soliciting the help of other employees.  None of the research has indicated any specific reason given by the former employee in this case, they just decided to take some data with them on their final day in the office.
+* MITRE :
+	- T1078 – Valid Accounts
+	- T1059.001 – Command and Scripting Interpreter: PowerShell 
+	- T1087 – Account Discovery
 
 ### Pivot & Escalate
 **Identity and Access Management (IAM) Policy Abuse**
 This card was selected as a loose interpretation of neglecting to have the off boarding controls include disabling accounts and access rights at the moment of termination, even better if it is all automated.
+* MITRE:
+	- T1098 – Account Manipulation
+	- T1069 – Permission Group Discovery
+	- T1078 – Valid Accounts (Privilege Abuse)
 
 ### C2 & Exfil
 ** Exfil over Physical Medium**
 Time and time again we hear about data growing feet and walking out of the building.  Who has time to build a C2, run scripts, create email forwarding rules or other methods to get data out.
-
+ * MITRE :
+	- T1052 – Exfiltration Over Physical Medium
+	- T1020 – Automated Exfiltration (loose, if any tooling assisted the copy)
 ### Persistence
 **Group Policy Object (GPO) Modification**
 There is no information to suggest that there was any persistence mechanism used in this scenario.  However, this card was selected as a loose interpretation of not disabling the account.
-
+ * MITRE :
+	- T1484.001 – Domain Policy Modification: Group Policy Modification
+	- T1098 – Account Manipulation 
+	
 ## Procedures that Reveal the Attack Chain
 ![](SMGC_Procedures.png)
+
+* Security Information and Even Management (SIEM) Log Analysis
+	- D3 ANALYZE LOGS
+	- D3 AUDT Audit Log Aggregation
+	- D3 HOSTBASED SENSOR
+	- D3 NETWORK TRAFFIC ANALYSIS
+	- D3 APPLICATION HARDENING
+
+* User and Entity Behavior Analytics (EUBA)
+	- D3 ACCESS MONITORING
+	- D3 ANOMALY DETECTION
+	- D3 AUTHENTICATION HARDENING
+	- D3 BEHAVIOR ANALYSIS
+	- D3 IDENTITY ANALYTICS
+
+* Employee Interviews
+	- D3 INCIDENT RESPONSE
+	- D3 THREAT HUNTING
+	- D3 SECURITY AWARENESS
+	- D3 INVESTIGATION SUPPORT
+
+* Permissions Audit
+	- D3 ACCESS CONTROL
+	- D3 CREDENTIAL HARDENING
+	- D3 PERMISSION MANAGEMENT
+	- D3 IDENTITY ANALYTICS
+	- D3 CONFIGURATION AUDIT
 
 
 ## Written Procedures
