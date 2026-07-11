@@ -7,8 +7,8 @@ Begining in Core Deck version 3, tool links are no longer included and refer you
 #### Core Deck 
 **Initial Compromise**\
 Versions 1-3 have minor differences within the Initial Compromise cards.\
-Version 3 changes _Trusted Relationship_ to _Compromised Trusted Relationship_ , _Password Spray_ to _External Password Spray_ , and _Web Server Compromise_ to _Compromised Web server_.  \
-Version 3.1 no changes from 3.0 
+Version 3 changes _Trusted Relationship_ to _Compromised Trusted Relationship_ , _Password Spray_ to _External Password Spray_ , and _Web Server Compromise_ to _Compromised Web server_.  \ and adds _Internal Password Spray_ \
+Version 3.1 removes _Internal Password Spray_ and brings back _Insider Threat_ \
 
 **Pivot and Escalate**\
 Version 3 has a name change from _Credential Stuffing_ to _Credential Harvesting_\
@@ -19,18 +19,20 @@ Version 3 changes _Gmail, Tumblr, SaleseForce, Twitter/X as exfil_ to _Cloud-Bas
 Version 3.1 no changes from 3.0
 
 **Persistance**\
-Version 3.1 renames _DLL Attacks_ to _Dynamic Link Library Hijacking_ , _Evil Firmware_ to _Malicious Firmware_ , and _Malicious Service/Just Malware_ to _Malicious Service_
+Version 3.0 renames _DLL Attacks_ to _Dynamic Link Library Hijacking_ , _Evil Firmware_ to _Malicious Firmware_ , and _Malicious Service/Just Malware_ to _Malicious Service_
+Version 3.1 no changes from 3.0
 
 **Procedures**\
 Version 1 has _Internal Segmentation_ which is not found in any other deck.\
 Version 3 introduces _Permissions Audit_ and _Cloud Event Log Analysis_, both of these cards are seen again in Trimaran V1, Denscure V1, Cloud Security V1 and V1.2,  and renames _Cyber Deception_ to _Active Defense and Cyber Deception_.    \
-Version 3.1 introduces _Competaitive Price_ amounts on the cards.
+Version 3.1 introduces _Competetive Price_ amounts on the cards.
 
 
 **Injects**
 Version 1 had _Management has Just Approved the Release of a New Procedure_ .  \
 Version 2 introduces two new cards, _Memory Analysis_ and _Cyber Deception_ , these are also available in ICS/IOT V1.1 \
 Version 3 removes _Give the Defenders a Random Procedure Card_ and _Lead Hadler Has a Baby, Takes FMLA Leave_ and adds two new cards, _Policy, What Policy?_ and  _Luck of the SOC_ .
+Version 3.1 no changes from 3.0
 
 **Consultants** \
 There are no consultant cards in the Core decks.

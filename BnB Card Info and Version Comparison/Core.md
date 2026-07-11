@@ -69,6 +69,9 @@ There are no consultant cards in the Core Decks
 
 ### Core Deck V2
 #### Released 08-2021
+**Pivot and Escalate** 
+- Renames _Kerberoasting_ to _Kerberoasting/ASREPRoasting_ 
+
 **C2 and Exfil**
 - Removed _Internal Segmentation_
 - Memory Analysis
@@ -87,10 +90,13 @@ There are no consultant cards in the Core Decks
 - Renames  _Trusted Relationship_ to _Compromised Trusted Relationship_ , _Password Spray_ to _External Password Spray_ , and _Web Server Compromise_ to _Compromised Web server_.  \
 
 **Pivot and Escalate**
-_ Renames _Credential Stuffing_ to _Credential Harvesting_ \
+_ Renames _Credential Stuffing_ to _Credential Harvesting_ \ and _Kerberoasting/ASREPRoasting_ back to the original _Kerberoasting_ 
 
 **C2 and Exfil**
 - Renames _Gmail, Tumblr, SaleseForce, Twitter/X as exfil_ to _Cloud-Based Services as Exfil_ 
+
+**Persistance** 
+- Renames _DLL Attacks_ to _Dynamic Link Library Hijacking_ , _Evil Firmware_ to _Malicious Firmware_ , and _Malicious Service/Just Malware_ to _Malicious Service_ 
 
 **Procedures**
 - Same as V2 plus
@@ -106,15 +112,13 @@ _ Renames _Credential Stuffing_ to _Credential Harvesting_ \
 ### Core Deck V3.1
 #### Released 12-2025
 **Initial Compromise**
-- No changes 
+- Removes _Internal Password Spray_ bring back _Insider Threat_  
 **Pivot and Escalate**
-- No changes 
+- No Changes 
 **C2 and Exfil**
 - No changes 
-
 **Persistance**\
-- Renames _DLL Attacks_ to _Dynamic Link Library Hijacking_ , _Evil Firmware_ to _Malicious Firmware_ , and _Malicious Service/Just Malware_ to _Malicious Service_ 
-
+- No Changes\
 **Procedures**
 - introduces _Competative Price_ amounts on the cards.
   
