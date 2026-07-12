@@ -20,6 +20,7 @@ Core V1/3, Expansion V1.2, Cloud Security V1.1, Densecure, Trimaranc, Datadog
 ![](Solution-Bankgok-V2.png)
 ### Variation 1
 ![](Solution-Bankgok-V3.png)
+
 ### Initial Compromise
 **_External Cloud Access / Unauthorized Cloud Access / Public Storage Bucket Exposed_**
 This is the moment the attackers found the first loose thread in the sweater. Whether it was an exposed cloud endpoint, an overly generous storage bucket, or an access control policy written by someone who clearly believed in radical trust, the attackers spotted an opening and took it. Think of it as the digital equivalent of leaving your front door unlocked — not because you meant to, but because you were ‘just running back inside for a second.’ The attackers simply walked in, admired the décor, and decided to stay awhile.   Researches, hackers, and others scan the internet for open unsecured systems to attack.  Always know your perimeter  and scan yourself often.  
@@ -84,7 +85,7 @@ MITRE ATT&CK:
  * Network Threat Hunting
 	* Network Threat Hunting is where defenders follow the faint footprints of suspicious traffic through the digital wilderness. Whether the attackers were beaconing, exfiltrating, or just wandering around like confused tourists, the network always leaves clues. The challenge is spotting them among the stampede of normal traffic — it’s like trying to identify one weird squirrel in a forest full of weird squirrels.
 
-## Procedure Success (explanations of why it worked)
+## Procedure Success 
 ### General Reasons
 - Technical
 	- Strong telemetry coverage captured the attacker’s activity across cloud access, credential misuse, and exfiltration paths. 
@@ -107,7 +108,8 @@ MITRE ATT&CK:
 	- Server and cloud engineers were available to validate anomalies quickly.
 	- Analysts were familiar with credential‑related attack patterns.
 
-### Procedure Success Explanations
+## Procedure Success 
+### Explanations
 - Technical
 	- The logs actually loaded before timing out — a rare and beautiful moment.
 	- A random dashboard glitch highlighted the attacker’s activity like a neon sign.
@@ -153,7 +155,8 @@ MITRE ATT&CK:
 	- Alert fatigue caused important signals to be overlooked.
 	- Server engineers were unavailable during the critical window.
 
-### Procedure Failures Explanations
+## Procedure Failures 
+### Explanations
 - Technical
 	-  Half the telemetry was missing because someone unchecked a box months ago.
 	- Domain‑fronted traffic blended perfectly with our usual chaos.
@@ -185,7 +188,7 @@ MITRE ATT&CK:
 
 
 
-### References
+## References
 
 [ Bangkok Post "NBTC Warns AWN on Data Breach"](https://www.bangkokpost.com/business/general/1924736/nbtc-warns-awn-on-data-breach )
 

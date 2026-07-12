@@ -14,36 +14,32 @@ Huntress Exp,  Core V2.2
 ### Initial Compromise
 _**Public Facing Database Compromise**_
 Security researchers and threat actors often use the same tools — the difference is usually intent and whether someone writes a blog post afterward. In this case, a researcher stumbled across an ElasticSearch database sitting wide open on the internet, indexed neatly by Shodan like it was proud of itself. No authentication, no firewall, no nothing. Just a giant “Welcome! Please enjoy our 340 million records” sign for anyone curious enough to look. It’s the digital equivalent of leaving your front door open, lights on, and a stack of mail on the counter.
-MiTRE
-- T1190 – Exploit Public-Facing Application  
-- T1589.002 – Gather Victim Identity Information: Personal Details  
-- T1595.002 – Active Scanning: Vulnerability Scanning (Shodan/BinaryEdge) 
-- T1593 – Search Open Websites/Domains
-
+* MiTRE
+	- T1190 – Exploit Public-Facing Application  
+	- T1589.002 – Gather Victim Identity Information: Personal Details  
+	- T1595.002 – Active Scanning: Vulnerability Scanning (Shodan/BinaryEdge) 
+	- T1593 – Search Open Websites/Domains
 ### Pivot & Escalate
 _**Internal Password Spray**_
 There’s no evidence anyone broke into Exactis systems directly, but the exposed data would make a password sprayer’s heart grow three sizes. With millions of email addresses and personal details, crafting believable phishing lures or guessing reused passwords becomes almost too easy. Humans are creatures of habit — we reuse passwords, we click things we shouldn’t, and we absolutely believe emails that start with “Quick question…” This card represents the very real next step someone could take with that much personal data in hand. 
-MiTRE
-- T1110.003 – Brute Force: Password Spraying  
-- T1566.001 – Phishing: Spearphishing Attachment
-
+* MiTRE
+	- T1110.003 – Brute Force: Password Spraying  
+	- T1566.001 – Phishing: Spearphishing Attachment
 ### C2 & Exfil
 _**HTTPS as Exfil**_
 There was no command‑and‑control here — the data didn’t need to be stolen so much as downloaded. The entire database was accessible over HTTPS like a public file share. Anyone with a browser, a script, or a pulse could pull down gigabytes of personal information without tripping a single alarm. It’s less “exfiltration” and more “open buffet,” but HTTPS still counts as the method of transfer, even if the only “malware” involved was curiosity.
-MiTRE
-- T1048.002 – Exfiltration Over Asymmetric Encrypted Non-C2 Protocol
-- T1071.001 – Application Layer Protocol: Web Protocols
-- T1530 – Data from Cloud Storage Object  
-
+* MiTRE
+	- T1048.002 – Exfiltration Over Asymmetric Encrypted Non-C2 Protocol
+	- T1071.001 – Application Layer Protocol: Web Protocols
+	- T1530 – Data from Cloud Storage Object  
 ### Persistence
 _**New User Added**_
 While there’s no indication anyone used this data to break into internal systems, the sheer volume of personal information exposed could easily support credential resets, impersonation, or account creation elsewhere. With enough details about someone — their habits, their kids, their pets, their interests — resetting an account becomes disturbingly easy. Creating a new user afterward is just the cherry on top. It’s the kind of persistence that doesn’t require hacking tools, just a frighteningly complete picture of a person’s life.
-MiTRE
-- T1136.001 – Create Account: Local Account 
-- T1136.002 – Create Account: Domain Account  
+* MiTRE
+	- T1136.001 – Create Account: Local Account 
+	- T1136.002 – Create Account: Domain Account  
 
 ## Procedures that Reveal the Attack Chain
-
 ![](Procedures_Exactly.png)
 
 * User and Entity Behavior Analytics (EUBA)
@@ -84,39 +80,33 @@ MiTRE
 
 ## Procedure Success 
 ### General Reasons
-Technical
+- Technical
 	- VarProcedure operated successfully because agents and logging mechanisms were not only installed but also thoroughly validated for alert logic, data quality, and completeness.
 	- VarProcedure returned accurate results because the search parameters included all relevant CIDR ranges, including internal, external, and any cloud-based assets.
-
 - Financial
 	 - VarProcedure functioned as expected because there was clear prioritization and alignment between projects, avoiding conflicts and ensuring that tool implementation and logging strategies were fully supported and integrated.
 	- VarProcedure SME has returned from training with new in-depth knowledge to share.
-
 - Political
 	 - VarProcedure worked successfully because the Owner/VP/Project Manager aligned with the security team early in the planning phase, ensuring it was configured at the subsidiary/branch/business unit without impacting their critical project timeline. Cross-functional collaboration made the integration smooth.
-	-  VarProcedure was applied across all devices, including executive/VIP endpoints, because leadership acknowledged the importance of consistent controls. Security policies were upheld with support from HR and the CISO, ensuring no exemptions undermined detection capability.
-	 
+	-  VarProcedure was applied across all devices, including executive/VIP endpoints, because leadership acknowledged the importance of consistent controls. Security policies were upheld with support from HR and the CISO, ensuring no exemptions undermined detection capability.	 
 - Personnel
 	- VarProcedure worked successfully because the contractor’s hours were managed proactively, and internal staff were trained to continue deployment seamlessly.
 	- VarProcedure worked successfully because the approval team established remote processes, enabling decisions even while attending conferences.
 
-## Procedure Success Explanations
+## Procedure Success 
+### Explanations
 - Technical
 	- The procedure worked because the tooling was actually deployed, configured, and sending the right telemetry — a rare moment where agents, logs, and dashboards all decided to behave like a functional ecosystem instead of a group project gone wrong.
 	- The procedure succeeded because all the right systems, subnets, and data sources were included from the start, avoiding the classic “wait… that server is ours too?” discovery halfway through the investigation.
-
 - Financial
 	- The procedure performed well because leadership funded the full feature set instead of the “lite” version that removes the exact capability everyone needs during an incident.
 	- The procedure worked because the team had recently completed training, meaning someone actually knew how to use the tool beyond clicking the default dashboard and hoping for the best.
-
 - Political
 	- The procedure succeeded because the security team, project owner, and business unit aligned early, preventing the usual turf battles over who owns what and whether it will “impact production.”
 	- The procedure was applied consistently across all devices — even VIP endpoints — because leadership agreed that security controls aren’t optional accessories like heated seats.
-
 - Personnel
-- The procedure worked because staffing was stable, the handoff between teams was smooth, and no one was out sick during the critical deployment window.
-- The procedure succeeded because the approval chain had remote processes in place, allowing decisions to move forward even when half the team was traveling or stuck in meetings that should’ve been emails.
-
+	- The procedure worked because staffing was stable, the handoff between teams was smooth, and no one was out sick during the critical deployment window.
+	- The procedure succeeded because the approval chain had remote processes in place, allowing decisions to move forward even when half the team was traveling or stuck in meetings that should’ve been emails.
 
 ## Procedure Failures
 ### General Reasons
@@ -133,8 +123,8 @@ Technical
 	- VarProcedure did not work as the team went to the new ‘raw bar’ down the street and everyone is suffering from food poisoning.
 	- VarProcedure did not work because the team that manages/approves using VarProcedure is away at a conference.
 
-
-### Procedure Failures Explanations
+## Procedure Failures 
+### Explanations
 - UEBA
 	- Technical
 		-  Agents, connectors, or collectors were never deployed to key systems, leaving blind spots.
@@ -174,9 +164,7 @@ Your investigation confirms that the exposed dataset originated from one of your
 ## Lessons Learned
 The Exactis incident highlights how catastrophic a simple misconfiguration can be when large volumes of sensitive personal data are involved. Research sources consistently emphasized that the exposed ElasticSearch database required no authentication, was indexed by internet‑scanning tools, and contained hundreds of personal attributes per individual — enough to fuel targeted phishing, identity‑based attacks, and password‑reuse exploitation. The event underscores the need for continuous attack‑surface monitoring, strict access controls on all public‑facing systems, and strong governance over externally hosted assets. Even without a direct intrusion, the scale and sensitivity of the exposed data significantly increased downstream risk and demonstrated that organizations must secure marketing and analytics datasets with the same rigor applied to financial or regulated information.
 
-
-
-References
+## References
 * [McAfee Blogs —The Exactis Data Breach: What Consumers Need to Know](https://www.mcafee.com/blogs/privacy-identity-protection/exactis-data-breach/) 
 * [Kiss Your Privacy Goodbye. Exactis Leaks A Database With 340 Million Personal Data Records](https://blog.knowbe4.com/kiss-your-privacy-goodbye-forever.-marketing-firm-exactis-leaks-a-database-with-340-million-personal-data-records )
 * [DiCello Levitt Files National Class Action Against Exactis in Wake of Massive Data Breach](https://dicellolevitt.com/dicello-levitt-casey-files-national-class-action-exactis-wake-massive-data-breach/)

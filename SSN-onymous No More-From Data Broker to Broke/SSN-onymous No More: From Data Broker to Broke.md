@@ -89,77 +89,65 @@ This card was selected as reports indicate misconfiguration and/or lack security
 	- VarProcedure succeeded because the agent had been installed for a sufficient period, allowing it to collect enough telemetry to establish a solid baseline for detection.
 	- VarProcedure worked efficiently due to appropriate permissions and full visibility across the environment, with no delays caused by approval workflows or access issues.
 	- VarProcedure worked as expected because comprehensive procedural documentation and updated network/data flow diagrams accurately reflected all critical paths and dependencies.
-
 - Financial
 	- VarProcedure worked because logging levels were maintained at the necessary detail, and performance issues were mitigated through executive-approved upgrades to newer, more capable devices. Proactive investments ensured stability and data fidelity.
 	- VarProcedure was successful because funding was approved to hire and/or train a dedicated SME. The team now has the necessary expertise to perform accurate and timely analysis using the tool.
 	-  VarProcedure worked successfully because the budget was approved in advance to expand licensing for the tool/service/project/application across all required entities, including subsidiaries, remote offices, data centers, and contractor environments.
-
 - Political
-	- VarProcedure was deployed and worked as intended because the change board reached consensus with the security team, overcoming initial concerns through clear communication, risk mitigation, and alignment on shared goals.
-		 
+	- VarProcedure was deployed and worked as intended because the change board reached consensus with the security team, overcoming initial concerns through clear communication, risk mitigation, and alignment on shared goals.	 
 - Personnel
 	- VarProcedure worked successfully because technicians were strategically distributed, and remote-access capabilities allowed immediate intervention without waiting for physical presence.
-	 - VarProcedure worked successfully because new users were onboarded with accelerated training and baseline monitoring tools, allowing anomalies to be detected quickly.
+	- VarProcedure worked successfully because new users were onboarded with accelerated training and baseline monitoring tools, allowing anomalies to be detected quickly.
 	- VarProcedure worked successfully because the organization invested in continuous skill development, ensuring personnel expertise remained current with evolving threats.
 
 
 ### Procedure Success Explanations
 - Technical
-	- Somewhere, an unnamed cloud engineer pushed a fix at 3:17 a.m., realized it worked, and immediately went on PTO. The system healed, logs backfilled, and the status page never changed from “All systems operational.” 
-This is the cloud equivalent of elves fixing your shoes overnight.
+	- Somewhere, an unnamed cloud engineer pushed a fix at 3:17 a.m., realized it worked, and immediately went on PTO. The system healed, logs backfilled, and the status page never changed from “All systems operational.” This is the cloud equivalent of elves fixing your shoes overnight.
 	- Containment worked so well it fixed unrelated problems: The “disabled” containment feature suddenly re‑enabled itself and quarantined three malware samples, two misconfigured printers, and one intern’s crypto‑mining rig.
 	- The documentation migration succeeded by accident: The corrupted files regenerated into a beautifully indexed knowledge base, complete with diagrams no one remembers creating and troubleshooting steps that actually work.
-
 - Financial
 	- VP approval was granted instantly: The VP, stuck in holiday traffic, approved every pending request from their phone out of sheer boredom, unlocking features no one knew were licensed.
 	- The multi‑region logging architecture overperformed: Despite being underfunded, it delivered logs faster than premium tiers — possibly because someone forgot to turn off “debug mode” in 2021 and it’s been overachieving ever since.
 	- The lowest‑tier log license magically expanded: The vendor “accidentally” upgraded your account for free, claiming it was part of a “seasonal generosity initiative” (translation: someone clicked the wrong button).
-
 - Political
 	- The hacktivist protest turned into a security awareness fair: They got cold, came inside, and ended up helping hand out phishing‑awareness pamphlets. HR is now considering hiring two of them.
 	- DevOps accidentally improved SIEM performance: Their “benchmark test” overloaded the system just long enough for the auto‑scaling logic to kick in and permanently upgrade the SIEM’s throughput. They now claim this was intentional.
-
 - Personnel
 	- The catered lunch created unexpected super‑productivity: The half of the company not poisoned became hyper‑motivated, bonded by shared survival, and resolved the incident before dessert.
 	- The SIEM/UEBA/EDR owner achieved enlightenment: During the enterprise degradation call, they achieved a state of pure clarity, fixed all three tools simultaneously, and disconnected the conference call before anyone could blame security again.
 
 ## Procedure Failures
 ### General Reasons
-- Technical (Detection Adaptability, Deployment & Infrastructure Readiness, Data Quality & Log Integrity, Visibility & Scope Coverage, and Operational Maturity.)
+- Technical 
 	-  VarProcedure did not work because the data center had an outage or no owner was identified for the system so it was unplugged/ripped out as part of vulnerability management.
 	- VarProcedure did not work because agents/logging were installed and configured but alert logic/rule engine/data quality/data completeness was never validated.
 	- VarProcedure did not work because only specific/internal/external CIDR rangers were used in the search.
-
-- Financial (Detection Adaptability, Deployment & Infrastructure Readiness, Data Quality & Log Integrity, Visibility & Scope Coverage, and Operational Maturity.)
+- Financial 
 	- VarProcedure did not work because budget to hire/train a SME on the tool was not approved.  The current team member does not have the required skill/training to do the proper analysis but are doing their best.
 	- VarProcedure did not work because the logging level had been lowered due to performance issues/degradations.  Newer devices would have reduced or eliminated the overall impact but had not been approved.  Executives are expediting the expenditure and implementation, to include professional services, to ensure data is available going forward.
-
- - Political (Detection Adaptability, Deployment & Infrastructure Readiness, Data Quality & Log Integrity, Visibility & Scope Coverage, and Operational Maturity.))
+ - Political 
 	- VarProcedure did not work because a member of the change board denied the change to deploy the agent/service/tool based on disagreements with the security team.
 	- VarProcedure did not work because due to disagreements over ownership and maintenance of the tool delayed deployment and configuration that could have shown artifacts related to the attack path used by the adversary.  The team has since been given approval to rapidly deploy the necessary tools/configurations to ensure logging will begin to flow.
 	- VarProcedure did not work because user/team/manager feels that the security team already has too much power and refuses to install/apply the required rights and permissions needed.  This will need to be corrected before the investigation can be completed.  This is an important reason to build inter-business relationships to confirm and explain under what circumstances the 'power' would be yielded and who has the authority to approve it.	
-
-- Personnel (availability, skill and experience level, motivation, teamwork, quantity)
+- Personnel 
 	- VarProcedure did not work because the team that manages/approves using VarProcedure is away at a conference.
 	- VarProcedure did not work because the tool/system requires physical access and the nearest expert technician is hours away.
 	- VarProcedure did not work because the SME is out of the country and unable to be contacted.  The team must use the provided playbook and hope for the best, albeit at a much slower pace.
 
-### Procedure Failures Explanations
+## Procedure Failures 
+### Explanations
 - Technical
 	- There is currently an ongoing cloud provider outage, all tools are inaccessible at this time.
 	- The capability to contain devices was inadvertently disabled after a system upgrade.
 	- A migration project moving our documentation library to a new vendor product has resulted in missing or corrupted information.  We may have to ‘wing it’ . 
-
 - Financial 
 	- Due to a maintenance freeze for the holidays,  the capability to update/log/contain/enable a feature on the system/tool requires VP approval.
 	- Underfunded multi‑region logging architectures delay evidence availability .
 	- The company bought the lowest tier log volume and we have exceeded our license.  
-
 - Political 
 	- A hacktivist group is demonstrating in front of your company and preventing anyone from getting inside.
 	- Devops decided to do a benchmark test against the logging infrastructure, without information stake-folder,  using half-open connections, exhausting system resources and resulting in a DoS of the SIEM.
-
 - Personnel 
 	- The company was celebrating a milestone event and had a catered lunch delivered.  Half of the company is now unavailable due to food poisoning.
 	- The owner of the SIEM is unable to make any changes right now as they also own the UEBA and the EDR and are in the middle of an enterprise degradation call where all the security tools are being accused as the culprit.  
@@ -176,7 +164,6 @@ A large collection of sensitive personal records ( including identity data, back
 Cloud storage protections that should have been enabled by default were misconfigured or disabled entirely. Logging was inconsistent across regions. Some systems had no monitoring at all. By the time the exposure was discovered, a massive volume of data had already been accessed and exfiltrated through cloud‑based services.
 
 There is no clear evidence of persistence, but the lack of visibility makes it impossible to rule out. What is certain is that the data is now circulating publicly, and the organization responsible for safeguarding it is facing severe operational, legal, and reputational fallout.
-
 
 ## Lessons Learned and Mitigating Controls
 In short, the NPD breach illustrates how systemic failures in credential hygiene, data encryption, cloud security posture, monitoring, third-party oversight, and incident transparency can combine to magnify damage. For future resilience, organizations (especially data brokers) must adopt a foundational zero trust approach, enforce strong access and encryption controls, continuously monitor for anomalous behavior, and maintain robust vendor security oversight.

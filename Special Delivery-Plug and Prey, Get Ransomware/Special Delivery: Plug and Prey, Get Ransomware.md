@@ -23,46 +23,37 @@ Densecure, Red Canary, DataDog
 ### Initial Compromise
 **_Trojan Mail_**
 A suspiciously friendly package arrives through the mail, complete with branding and paperwork convincing enough that an employee decides to “check what’s on the included USB.” Once plugged in, the device reveals itself not as storage but as a BadUSB/HID‑injection tool, rapidly typing commands faster than any human could blink. These commands launch PowerShell, pull down a small loader, and quietly establish an initial foothold on the system. Nothing obvious appears on screen, so the user assumes the drive is simply defective and moves on with their day. Meanwhile, the loader performs quick reconnaissance and prepares the host for credential harvesting and lateral movement. It’s the corporate equivalent of someone strolling past the front desk with a clipboard and everyone assuming they must belong there.
-
-
-MITRE Techniques:
-- T1204 — User Execution 
-- T1091 — Replication Through Removable Media 
-- T1059.001 — PowerShell 
-- T1105 — Ingress Tool Transfer 
-- T1566.001 — Spearphishing (Physical Delivery Variant; Social engineering via mailed package)
-
-
+* MITRE
+	- T1204 — User Execution 
+	- T1091 — Replication Through Removable Media 
+	- T1059.001 — PowerShell 
+	- T1105 — Ingress Tool Transfer 
+	- T1566.001 — Spearphishing (Physical Delivery Variant; Social engineering via mailed package)
 ### Pivot & Escalate
-**_LSASS Credential Dump_**
+_**LSASS Credential Dump**_
 The attacker extracts credentials from LSASS memory, enabling lateral movement and access to additional systems using harvested accounts.  Once inside, the attacker goes straight for LSASS like it’s a piñata full of passwords. They poke around memory, scoop up credentials, and suddenly every locked door in the building opens like they’ve been handed the master key. It’s the digital equivalent of finding the sticky note with the Wi‑Fi password — except this one unlocks the whole domain.
-
-MITRE Techniques:
-- T1204 — User Execution
-- T1566.001 — Spearphishing Attachment (physical mail variant)
--  T1059.001 — PowerShell
-- T1105 — Ingress Tool Transfer
-
+* MITRE 
+	- T1204 — User Execution
+	- T1566.001 — Spearphishing Attachment (physical mail variant)
+	-  T1059.001 — PowerShell
+	- T1105 — Ingress Tool Transfer
 ### C2 & Exfil
-**_Living off the Cloud as Exfil_**
+_**Living off the Cloud as Exfil**_
 The attacker uses legitimate cloud storage APIs to exfiltrate data and maintain command‑and‑control channels, blending activity into normal cloud service usage.  Why bother setting up shady servers when you can hide inside the same cloud services everyone else uses? The attacker uploads stolen data to a cloud drive like they’re backing up vacation photos. To the network, it looks like normal business traffic — just with a suspicious amount of enthusiasm.
-
-MITRE Techniques:
-- T1003.001 — LSASS Memory Dump
-- T1550 — Use of Stolen Tokens
-- T1021.001 — RDP
-- T1021.002 — SMB
-
+* MITRE
+	- T1003.001 — LSASS Memory Dump
+	- T1550 — Use of Stolen Tokens
+	- T1021.001 — RDP
+	- T1021.002 — SMB
 ### Persistence
-**_Schedule Task_**
+_**Schedule Task**_
 A disguised scheduled task is created to periodically execute a remote stager, ensuring long‑term access under a compromised account.   Nothing says “I’m staying forever” like a scheduled task pretending to be routine maintenance. It runs quietly in the background, checking in with the attacker like a needy houseplant that waters itself. If anyone notices it, the name is vague enough to make analysts second‑guess whether it’s supposed to be there.
-
-MITRE Techniques:
-- T1003.001 — LSASS Memory Dump
-- T1550 — Use of Stolen Tokens
-- T1021.001 — RDP
-- T1021.002 — SMB
-
+* MITRE Techniques:
+	- T1003.001 — LSASS Memory Dump
+	- T1550 — Use of Stolen Tokens
+	- T1021.001 — RDP
+	- T1021.002 — SMB
+	
 ## Procedures that Reveal the Attack Chain
 ![](Procedures_Special_Delivery.png)
 
@@ -102,27 +93,24 @@ MITRE Techniques:
 
 ## Procedure Success 
 ### General Reasons
--- Technical
-- The organization maintained sufficient logging and telemetry across critical systems, enabling timely detection and correlation of suspicious activity.
+- Technical
+	- The organization maintained sufficient logging and telemetry across critical systems, enabling timely detection and correlation of suspicious activity.
 	- Endpoint and network controls were configured with effective default‑deny or least‑privilege principles, reducing the attacker’s ability to execute or propagate tooling.
 	- Security monitoring tools had up‑to‑date detection content, allowing analysts to identify anomalous behavior early in the intrusion chain.
 	- System hardening and patching practices limited the attacker’s ability to exploit known vulnerabilities or escalate privileges.
 	- Segmentation and access controls restricted lateral movement paths, preventing the attacker from reaching high‑value assets.
-
 - Financial
 	- The organization invested in modern security tooling and monitoring capabilities, improving visibility and reducing detection gaps.
 	- Adequate funding supported regular staff training, enabling analysts to recognize and respond to suspicious activity more effectively.
 	- Budget allocations allowed for timely replacement of legacy systems that would have otherwise increased the attack surface.
 	- Financial support for third‑party assessments helped identify weaknesses before they could be exploited.
 	- Sufficient resources were available to maintain a dedicated incident response capability, reducing time to containment.
-
 - Political
 	-  Leadership prioritized cybersecurity initiatives, enabling rapid decision‑making and coordinated response actions. 
 	- Clear governance structures ensured that security policies were consistently applied across business units.
 	- Cross‑department collaboration allowed security teams to quickly validate anomalies and escalate concerns.
 	- Executive support for security operations empowered analysts to take decisive action without bureaucratic delays.
 	- Established communication channels ensured that critical information reached the right stakeholders promptly.
-
 - Personnel
 	- Employees were trained to recognize suspicious activity and report it promptly, improving early detection.
 	- Analysts demonstrated strong investigative skills, enabling them to correlate disparate indicators and identify malicious behavior.
@@ -130,28 +118,26 @@ MITRE Techniques:
 	- Incident responders acted quickly and effectively, minimizing the attacker’s ability to expand their foothold.
 	- Staff adhered to access‑control policies, limiting unnecessary privileges that could have been abused.
 
-### Procedure Success Explanations
+## Procedure Success 
+### Explanations
 - Technical
 	- Endpoint security immediately freaked out when the USB started typing faster than any human with a caffeine addiction, giving analysts enough time to slam the digital brakes before the loader got comfy.
 	- Memory analysis caught the attacker poking LSASS like it was a vending machine that ate their dollar, letting responders isolate the host before any credentials spilled out.
 	- Cloud SIEM lit up like a Christmas tree when the compromised account started touching cloud resources it had no business knowing existed, allowing the team to shut down exfiltration before anything valuable left the building.
 	- Scheduled task creation logs showed up in the timeline like a neon sign reading “Totally Not Suspicious,” helping analysts rip out the persistence mechanism before it could fire.
 	- UEBA noticed the compromised account suddenly acting like it was speed‑running the entire environment, prompting analysts to investigate before the attacker could collect any achievements.
-
 - Financial
 	-  The organization’s investment in modern endpoint tools paid off when the BadUSB’s keyboard‑ninja routine triggered alerts that even the night shift couldn’t ignore.
 	- Funding for cloud‑monitoring upgrades meant the attacker’s “just browsing” data‑access pattern was flagged before they could pack anything into a digital suitcase.
 	- Money spent on memory‑forensics training ensured analysts recognized LSASS tampering instantly instead of shrugging and hoping it was “just Windows being Windows.”
 	- Log‑retention improvements funded last quarter gave investigators a complete breadcrumb trail instead of the usual “some logs, some vibes.”
 	- Prior investment in incident‑response readiness meant the team didn’t have to Google “how to isolate a host” while the attacker was still clicking around.
-
 - Political
 	- Leadership didn’t hesitate when the USB incident was reported, green‑lighting workstation isolation faster than you can say “unapproved peripherals.”
 	- Governance policies were clear enough that LSASS alerts didn’t get stuck in a ticket queue behind printer issues and VPN resets.
 	- Cloud admins and security analysts actually talked to each other for once, quickly confirming that the API activity was about as normal as a raccoon in the break room.
 	- Executives backed the decision to disable the compromised account immediately, instead of asking for a 47‑slide justification deck.
 	- Communication channels worked so well that everyone knew about the malicious scheduled task before it had a chance to introduce itself.
-
 - Personnel
 	- The employee who plugged in the USB reported the weird behavior right away, instead of pretending nothing happened and quietly hoping the computer “fixed itself.”
 	- Analysts recognized the LSASS access pattern instantly, because nothing good ever comes from a random process trying to hug LSASS.
@@ -167,21 +153,18 @@ MITRE Techniques:
 	- Detection content was outdated or missing, resulting in missed alerts for suspicious behavior.
 	- Critical systems lacked proper hardening, enabling the attacker to exploit known weaknesses.
 	- Network segmentation was inadequate, allowing the attacker to move freely between systems.
-
 - Financial
 	- Budget limitations prevented investment in modern security tools or monitoring capabilities.
 	- Insufficient funding restricted staff training opportunities, reducing the team’s ability to recognize and respond to threats.
 	- Legacy systems remained in production due to cost constraints, increasing the organization’s attack surface.
 	- Financial pressures delayed necessary upgrades or security improvements.
 	- Limited resources prevented the organization from conducting regular third‑party assessments.
-
 - Political
 	- Leadership did not prioritize cybersecurity initiatives, resulting in slow or ineffective response actions.
 	- Governance structures were unclear or inconsistently applied, leading to gaps in policy enforcement.
 	- Cross‑department communication was poor, delaying the escalation of suspicious activity.
 	- Decision‑making bottlenecks prevented timely containment efforts.
 	- Security teams lacked executive support, reducing their authority to act decisively during incidents.
-
 - Personnel
 	- Employees were not adequately trained to recognize or report suspicious activity.
 	- Analysts lacked the experience or resources needed to correlate indicators and identify malicious behavior.
@@ -189,28 +172,26 @@ MITRE Techniques:
 	- Incident responders were slow to act or unable to coordinate effectively, giving the attacker more time to expand access.
 	- Excessive or unnecessary privileges were granted to users, providing the attacker with additional opportunities for abuse.
 
-### Procedure Failures Explanations
--- Technical
-- Endpoint security didn’t flag the BadUSB’s keyboard‑mashing behavior, leaving analysts to assume the user was just having a very productive morning.
+## Procedure Failures 
+### Explanations
+- Technical
+	- Endpoint security didn’t flag the BadUSB’s keyboard‑mashing behavior, leaving analysts to assume the user was just having a very productive morning.
 	- Memory analysis wasn’t performed until much later, giving the attacker plenty of time to rummage through LSASS like it was a clearance bin.
 	- Cloud SIEM alerts were either too noisy or too quiet, causing the attacker’s data‑access patterns to blend in with the usual chaos.
 	- Scheduled task creation logs weren’t collected or correlated, allowing the persistence mechanism to sit quietly like a forgotten meeting reminder.
 	- UEBA didn’t trigger on the compromised account’s sudden burst of “I have admin dreams now,” letting the attacker move around without raising eyebrows.
-
 - Financial
 	- Budget constraints meant endpoint protection was running in “best effort” mode, which is SOC‑speak for “good luck, everyone.”
 	- Lack of funding for cloud‑monitoring improvements allowed the attacker’s exfiltration prep to masquerade as normal business traffic.
 	- Memory‑forensics training was postponed for cost reasons, leaving analysts staring at LSASS artifacts like they were ancient runes.
 	- Log‑retention limits meant half the attacker’s activity evaporated into the void, forcing investigators to reconstruct events using hope and intuition.
 	- Incident‑response readiness suffered from underinvestment, causing delays while the team scrambled to figure out who was supposed to do what.
-
 - Political
 	- Leadership hesitated to isolate the affected workstation, worried it might disrupt productivity more than the active intrusion.
 	- Governance gaps left LSASS‑related alerts stuck in a queue behind printer tickets and “VPN won’t connect” complaints.
 	- Cloud and security teams operated in silos, turning the investigation into a slow‑motion relay race with no baton handoff.
 	- Executives required multiple approvals before disabling the compromised account, giving the attacker a generous grace period.
 	- Communication channels broke down, so half the team learned about the malicious scheduled task only after it had already executed.
-
 - Personnel
 	- The employee who plugged in the USB didn’t report anything unusual, assuming the computer’s weird behavior was just “Monday being Monday.”
 	- Analysts dismissed early LSASS access patterns as noise, giving the attacker time to collect credentials like they were Pokémon.
@@ -233,8 +214,7 @@ Although there were no reported compromises using this technique, the below are 
 - Persistence‑related telemetry, especially around scheduled tasks, should be collected and correlated to prevent attackers from establishing long‑term footholds.
 - Cross‑team communication workflows should be reinforced to ensure cloud, endpoint, and SOC teams can validate anomalies quickly during early‑stage investigations.
 
-
-### References
+## References
   
 Bing, J. “FBI: FIN7 Hackers Target U.S. Companies with BadUSB Devices to Install Ransomware.” The Record, 2021, https://therecord.media/fbi-fin7-hackers-target-us-companies-with-badusb-devices-to-install-ransomware.
 

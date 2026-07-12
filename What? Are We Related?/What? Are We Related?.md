@@ -92,16 +92,25 @@ MITRE ATT&CK
 		* D3-BEHA – Behavior Analytics
 		* D3-ANML – Anomaly Detection
 * Security Information and Even Management (SIEM) Log Analysis
-	* This procedure was selected as it can detect Initial Compromise and Pivot and Escalate.  Community articles appear to indicate the adversary may have changed IP's, used VPN or cloud hosting for access attempts, as well as scripting access activity.  It is possible that user-agent statistics may also have shown this activity.  Web application telemetry may have shown accessing other distant family trees that were not typical for the customer. 
+	* This procedure was selected as it can detect Initial Compromise and Pivot and Escalate.  Community articles appear to indicate the adversary may have changed IP's, used VPN or cloud hosting for access attempts, as well as scripting access activity.  It is possible that user-agent statistics may also have shown this activity.  Web application telemetry may have shown accessing other distant family trees that were not typical for the customer.
+	MiTRE
+		* D3-ANLZ – Log Analysis
+		* D3-AUDT – Audit Log Aggregation 
 * Cloud Event Log Analysis
 	* This procedure was selected as it can detect C2 and Exfil .  This card is a very loose interpretation that the adversary either downloaded information directly to their host or used scripts and API calls to access and retrieve the data. 
+	MiTRE
+		* D3-CLDL – Cloud Logging
+		* D3-ACCT – Account Monitoring
+		*  D3-EXFL – Exfiltration Detection
 * Server Analysis
 	* This procedure was selected as it can detect Living off the Land/Hiding in Plain Site.  However, in this case, it is a very loose interpretation of valid account use from multiple IPs, location, or times of day. 
-
+	MiTRE
+		* D3-DSRC – Data Source Analysis
+		* D3-EXFL – Exfiltration Detection
 
 ## Procedure Success 
 ### General Reasons
-Technical
+- Technical
 	- VarProcedure found unauthorized/suspicious evidence of IP/commands/software/log deletion on the system.  This was found by correlating logs from multiple data sets EDR/Windows Logs/Firewall/Proxy/Server/UberAgent.  This allowed for finding patient zero to use in subsequent searches.
 	- VarProcedure discovered suspect network/data/flow activity between two devices that warrant further investigation of ports and protocols used.
 	
@@ -119,6 +128,8 @@ Technical
 	- VarProcedure worked successfully because agents were thoroughly tested, validated, and monitored, ensuring they remained installed and functional across critical systems.
 
 
+## Procedure Success 
+### General Explanations 
 
 
 ## Procedure Failures
@@ -126,15 +137,12 @@ Technical
 - Technical
 	- VarProcedure didn't detect anything because the attacker changed TTPs (Tactics, Techniques, Procedures).
 	- VarProcedure did not detect the attack because the agent/signatures are out of date or were corrupted during a recent update.
-	
 - Financial
 	- VarProcedure did not work because the budget was not approved or was delayed to expand licensing for tool/service/project/application to subsidiary/offices/datacenter/branch/new location/work from home/contractors.
-	- VarProcedure failed because the PO to renew the tool/service got stuck in the payment process. The tool/service stopped before someone noticed.
-	
+	- VarProcedure failed because the PO to renew the tool/service got stuck in the payment process. The tool/service stopped before someone noticed.	
 - Political
 	- VarProcedure wasn't configured at subsidiary/branch/business unit because Owner/VP/Senior Know-it-All/Project Manager said it would interfere with their CrItIcAl PrOjEcT timeline.
 	- VarProcedure found nothing because the project to deploy agent/service/tool/configuration was delayed until next fiscal year by the board.
-	
 - Personnel
 	- VarProcedure did not work because the only person that knows how to do/use VarProcedure is on vacation/retired/RIF/terminated yesterday.
 	- The contractor hired to deploy VarProcedure ran out of hours in their contract.
@@ -191,7 +199,7 @@ The attacker utilized prior password database dumps and began a credential stuff
 2. Use MFA, where feasible use an app, trusted device,  or key-fob rather than SMS 2FA.
 3. Check for password credential dumps of other organizations, there is a high likelyhood that someone else may have also used that password.
 
-### References
+## References
 * 23andMe user data targeting Ashkenazi Jews leaked online
 	*  [https://www.nbcnews.com/news/us-news/23andme-user-data-targeting-ashkenazi-jews-leaked-online-rcna119324](#)
 

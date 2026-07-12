@@ -87,29 +87,27 @@ There is no information to suggest that there was any persistence mechanism used
 	* Someone tweaked a GPO like they were adjusting the thermostat. One tiny change, and suddenly offboarding controls are taking a nap. It is subtle, quiet, and exactly the kind of thing that ruins your weekend.
 
 
-## Procedure Success (explanations of why it worked)
+## Procedure Success 
 ### General Reasons
 - Technical
 	- VarProcedure worked as tools were fully deployed across relevant systems, ensuring complete visibility into authentication events, workstation activity, and policy changes.
 	- VarProcedure baselines were up to date, enabling UEBA to correctly identify deviations in user activity without generating excessive false positives.
 	- VarProcedure  was successful due to logging agents functioning correctly, producing consistent, timestamp‑aligned telemetry that supported rapid correlation and analysis.
-
 - Financial
 	- VarProcedure  worked as the organization maintained appropriate SIEM and UEBA licensing tiers, enabling full access to advanced analytics, long‑term log retention, and identity‑focused detection modules.
 	- The renewal and procurement processes were well‑managed, ensuring no lapse in monitoring capabilities or access to critical audit tools.
 	- Budget allocations supported ongoing training for analysts and IAM staff, improving their ability to interpret complex identity‑related telemetry.
-
 - Political
 	- IAM, Security, and HR had well‑defined responsibilities, enabling efficient collaboration during the investigation and reducing ambiguity around access‑related decisions.
 	- Leadership supported transparent information sharing across departments, ensuring timely access to badge logs, HR data, and system activity records.
 	- Executive leadership treated identity‑related anomalies as high‑priority issues, enabling rapid escalation and resource allocation.
-
 - Personnel
 	-Skilled team members with strong IAM and log‑analysis expertise were available during the incident window, enabling efficient triage and investigation.
-- Staff conducting employee interviews were trained in eliciting accurate information, improving the quality of insights gathered from personnel.
-- Security, IAM, and HR teams worked cohesively, sharing information promptly and coordinating investigative tasks without friction.
+	- Staff conducting employee interviews were trained in eliciting accurate information, improving the quality of insights gathered from personnel.
+	- Security, IAM, and HR teams worked cohesively, sharing information promptly and coordinating investigative tasks without friction.
 
-### Procedure Success Explanations
+## Procedure Success 
+### Explanations
 - Technical
 	- The SIEM actually had the right logs this time, instead of 900 GB of printer noise.
 	- The removable‑media alert fired correctly, shocking everyone who thought that rule was broken.
@@ -150,7 +148,8 @@ There is no information to suggest that there was any persistence mechanism used
 	- Analysts lacked sufficient training in identity‑centric investigations, leading to misinterpretation of logs or missed indicators.
 	- Overextended staff struggled to prioritize the incident effectively, resulting in slower response times and reduced investigative depth.
 
-### Procedure Failures Explanations
+## Procedure Failures 
+### Explanations
 - Technical
 	- Half the logs were missing because the agent on the compromised workstation was “scheduled for upgrade.”
 	- The USB alert was buried under 4,000 “informational” messages about cafeteria badge swipes.
@@ -182,8 +181,7 @@ The night shift at South Georgia Medical Center was already held together with c
 4. Adopt least privilege with break-glass: Default to minimal data visibility; require time-bound, auditable elevation for specific clinical tasks and prohibit bulk exports without dual authorization.
 5. Strengthen detection-to-action: Couple alerts with automated containment (session kill, device isolation), and keep incident playbooks rehearsed to reduce dwell time and impact.
 
-
-### References
+## References
 
 https://www.hipaajournal.com/former-south-georgia-medical-center-employee-arrested-over-41k-record-data-breach/
 https://www.hipaaguidelines101.com/ex-employee-of-south-georgia-medical-center-detained-because-of-41k-record-data-breach/

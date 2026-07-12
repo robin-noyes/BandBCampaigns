@@ -27,7 +27,6 @@ Core Deck (v2), Core Deck plus IR Expansion, Cloud Security (v2), ICS/IoT, RedCa
 
 ### Initial Compromise
 _**Phishing/Out-of-Band Phishing**_
-
 This is our "Persistent Pest" card, the timeless art of social engineering—Mailchimp’s attackers clearly kept knocking until someone let them in—repeatedly. The exact medium remains a mystery: sliding into DMs, sending "urgent" Slack messages, or pulling the classic "it’s me, your IT guy" over a phone call, or carrier pigeon… who’s to say. What we do know is that the attackers cast a wide enough net that one unlucky user eventually took the bait, proving once again that humans remain the most ‘versatile’ attack surface in the enterprise.
 * MiTRE
     - T1566 – Phishing  
@@ -38,7 +37,6 @@ This is our "Persistent Pest" card, the timeless art of social engineering—Mai
 
 ### Pivot & Escalate
 _**Overprivileged Group/Local Privilege Escalation**_
-
 This card represents the classic ‘I got in with one account but let me go ahead and borrow something with actual power’ maneuver. While the initial user may have opened the door, it’s entirely plausible a second, more privileged account did the real heavy lifting—because why stop at one compromised identity when you can upgrade your access like a frequent‑flyer perk. Since "using the internal admin panel like a personal megaphone" isn’t a standard card, we’re betting on the old-school tactic of inbox manipulation to keep their activities—and the replies—hidden in the shadows.
 * MiTRE 
     - T1213 – Data from Information Repositories  
@@ -48,7 +46,6 @@ This card represents the classic ‘I got in with one account but let me go ahea
 
 ### C2 & Exfil
 _**Create Inbox Forwarding Rule**_
-
 While there’s no smoking gun proving the attackers set up a secret mail relay, we know they used internal tools to blast out phishing emails. Since "using the internal admin panel like a personal megaphone" isn’t a standard card, we’re betting on the old-school tactic of inbox manipulation to keep their activities—and the replies—hidden in the shadows.
 * MiTRE
     - T1537 – Transfer Data to Cloud Account  
@@ -59,7 +56,6 @@ While there’s no smoking gun proving the attackers set up a secret mail relay,
 
 ### Persistence
 _**MFA Bypass/Cross-Tenant Access**_
-
 This card was selected as a nod to persistence techniques, even though nothing in the incident suggests MFA was touched.  Since the attackers successfully strolled into a cross-tenant administration tool like they owned the place, we have to assume they either whispered the right secrets to bypass Multi-Factor Authentication or found a way to hop the fence between accounts without tripping the alarms. It’s a bit of an "educated guess," but it beats assuming they just asked nicely.
 * MiTRE
     - T1539 – Steal Web Session Cookie  
@@ -107,7 +103,7 @@ This card was selected as a nod to persistence techniques, even though nothing i
 * Endpoint Security Protection Analysis
     * Based on the available information, this card does not identify any of the attack tactics but they were selected because every SOC has at least one installed—like that one coffee mug nobody remembers buying that sits in the break room collecting dust.
 
-## Procedure Success (explanations of why it worked)
+## Procedure Success 
 ### General Reasons
 - Technical
     - VarProcedure worked effectively because the agent was deployed successfully, with full support for the operating system and device type, including legacy or critical assets.
@@ -121,7 +117,8 @@ This card was selected as a nod to persistence techniques, even though nothing i
     - VarProcedure worked successfully because a strong reporting culture encouraged personnel to escalate suspicious activity without hesitation.
     - VarProcedure worked successfully because leadership emphasized preparedness, ensuring documentation, playbooks, and escalation paths were always up to date.
 
-### Procedure Success Explanations
+## Procedure Success
+### Explanations
 - Technical
     - Cloud logs finally caught something useful because the attacker generated an error message so loud it practically filed its own ticket. 
     - Log-Pocalypse!  The success was purely a result of Data Quality & Log Integrity. The team had recently fixed a "noisy" log source that used to bury inbox changes under thousands of "Email Read" events. Once the data was clean, the creation of a single forwarding rule triggered a UEBA alert so clear it was impossible to ignore.
@@ -160,7 +157,8 @@ This card was selected as a nod to persistence techniques, even though nothing i
     - VarProcedure did not work because no one noticed that there was no SME/Lead assigned to the shift and our dedicated on-call VoIP number is on the fritz again.
     - VarProcedure did not work because the analyst was a little too helpful with the ‘escalation’ request, thinking they were impressing a high-level employee.gitb
 
-### Procedure Failures Explanations
+## Procedure Failures 
+### Explanations
 - Technical
     -  Despite a heavy investment in EDR, the Visibility & Scope Coverage failed because the targeted employee was using a legacy "testing" laptop that was not in the central inventory. The phishing link was clicked in a vacuum where no security agent was listening.
     - Half the logging agents are installed, the other half are “scheduled for next quarter,” and the one that mattered was on a machine named “TEMP‑LAPTOP‑DO‑NOT‑USE.”
@@ -196,8 +194,7 @@ The attacker’s access has been revoked, but the downstream impact, including c
 - High-friction workflows for sensitive helpdesk actions: For example, require dual control (two separate employees) or manager approval for changing account owners, modifying API keys, or exporting large lists.
 - Red-team-driven social engineering training: Use recurring, realistic phishing and vishing simulations targeted at support staff and contractors, with feedback loops and consequences if risky behavior persists.
 
-
-### References
+## References
 * TechCrunch:*Mailchimp says it was hacked — again
     * [https://techcrunch.com/2023/01/18/mailchimp-hacked/](#)
 * MailChimp:*Information About a Recent Mailchimp Security Incident
