@@ -15,59 +15,55 @@ Let us know what you think! And if somehow you arrived here having never heard o
 ## Scenarios
 
 ### The Call Came from Inside the Network
-*A scneario based on the Ubiquiti Breach. Is your team ready for an insider threat attempting to extort you that also happens to be on your Incident Response Team?*
-
+*A scneario based on the Ubiquiti Breach. Is your team ready for an insider threat attempting to extort you that also happens to be on your Incident Response Team?*\
 [Scenario Guide][1]
 
 ### That's Disputable
-*A scenario based on the Equifax breach. How does you team handle critical vulnerabilities on a publicly facing system disclosing millions of PII records?*
-
+*A scenario based on the Equifax breach. How does you team handle critical vulnerabilities on a publicly facing system disclosing millions of PII records?*\
 [Scenario Guide][2]
 
 ### Water Water Everywhere
-*A scenario where a Florida Water Treatment Plant has a security incident related to TeamViewer. Are you ready to detect outside access to a laptop in your environment that allows access to sensitive systems?*
-
+*A scenario where a Florida Water Treatment Plant has a security incident related to TeamViewer. Are you ready to detect outside access to a laptop in your environment that allows access to sensitive systems?*\
 [Scenario Guide][3]
 
 ### What? We Are Related
-*A scenario based off other the 23andMe security incident in 2023.  Optional features that allow more access to than they shoudld.*
-
+*A scenario based off other the 23andMe security incident in 2023.  Optional features that allow more access to than they shoudld.*\
 [Scenario Guide][4]
 
 ### Exactly What You Are Looking For, Right?
-*A scenario based upon the Exactis data broker security incident.  When your database gets away from you, can you find it ?*
-
+*A scenario based upon the Exactis data broker security incident.  When your database gets away from you, can you find it ?*\
 [Scenario Guide][5]
 
 ### SSN-onymous No More-From Data Broker to Broke
-*A scenario based upon the National Data Broker and Records Check dot net security incident.  Are you sure what information is being shared with the internet at large?*
-
+*A scenario based upon the National Data Broker and Records Check dot net security incident.  Are you sure what information is being shared with the internet at large?*\
 [Scenario Guide][6]
 
 ### The Great Mail Fail: Third Time’s Not the Charm
-*The Mailchimp incidents are a noble reminder that no matter how many tools we deploy or policies we write, a determined social engineer can still waltz past our defenses the moment someone in the org decides to trust a message that 'just felt legit at the time.'*
-
+*The Mailchimp incidents are a noble reminder that no matter how many tools we deploy or policies we write, a determined social engineer can still waltz past our defenses the moment someone in the org decides to trust a message that 'just felt legit at the time.'*\
 [Scenario Guide][7]
 
 ### Paging Dr. USB: Your Extraction Is Ready
-*The security incident at Southern Georgia Medical Center is a stark reminder that we need to have as tight of offboarding process and controls as we do for onboarding.  Why work on other methods of accessing and exfiltrating data when you can download it and walk it out the door.*
-
+*The security incident at Southern Georgia Medical Center is a stark reminder that we need to have as tight of offboarding process and controls as we do for onboarding.  Why work on other methods of accessing and exfiltrating data when you can download it and walk it out the door.*\
 [Scenario Guide][8]
 
 ### From Bankgok to Backdoor - The Biggest Export No One Asked For
-*A scenario based on AIS/AWN’s spectacularly unsecured 8.3 billion‑record database, proving that when you leave DNS and NetFlow logs hanging out on the open internet, someone will absolutely notice — and it won’t be your security team. Bonus points for the follow‑up PBX breach claims, because nothing says “we’ve got this under control” like a telecom repeatedly learning the same lesson in public.*
-
-
+*A scenario based on AIS/AWN’s spectacularly unsecured 8.3 billion‑record database, proving that when you leave DNS and NetFlow logs hanging out on the open internet, someone will absolutely notice — and it won’t be your security team. Bonus points for the follow‑up PBX breach claims, because nothing says “we’ve got this under control” like a telecom repeatedly learning the same lesson in public.*\
 [Scenario Guide][9]
+
 ### Special Delivery-Plug and Prey, Get Ransomware
-*A scenario inspired by FIN7’s gift‑card‑themed BadUSB campaign, where plugging in a “free reward” turns out to be the fastest way to donate your LSASS credentials to organized crime. From keystroke‑injection chaos to cloud‑exfiltration shenanigans, this one reminds us that sometimes the real malware was the curiosity we made along the way.*
-
+*A scenario inspired by FIN7’s gift‑card‑themed BadUSB campaign, where plugging in a “free reward” turns out to be the fastest way to donate your LSASS credentials to organized crime. From keystroke‑injection chaos to cloud‑exfiltration shenanigans, this one reminds us that sometimes the real malware was the curiosity we made along the way.*\
 [Scenario Guide][10]
-### Zoho-More Like Zo-No
-*This scenario walks through how an authentication bypass in Zoho ManageEngine turned an identity‑adjacent service into an unintentional front door for state‑sponsored actors. It is a reminder that when patching cycles move at “seasonal” speed, attackers do not wait for spring cleaning before letting themselves in.*
 
+### Zoho-More Like Zo-No
+*This scenario walks through how an authentication bypass in Zoho ManageEngine turned an identity‑adjacent service into an unintentional front door for state‑sponsored actors. It is a reminder that when patching cycles move at “seasonal” speed, attackers do not wait for spring cleaning before letting themselves in.*\
 [Scenario Guide][11]
-### COMING SOON
+
+### The Credential Sync Catastrophe: When the MFA Button Finally Gave Up
+*Based on the intrusion where attackers spammed MFA prompts until someone finally tapped “Approve,” turning a nuisance notification into a golden ticket. What followed was a tour of Cisco’s internal environment featuring credential harvesting, lateral movement, and persistence techniques that blended in so well they might as well have been wearing company badges.*\
+[Scenario Guide][12]
+
+### Coming Soon
+[Scenario Guide][13]
 
 [1]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/Call%20From%20Inside%20the%20Network/Call%20From%20Inside%20the%20Network.md
 [2]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/That's%20Disputable/That's%20Disputable.md
@@ -79,4 +75,6 @@ Let us know what you think! And if somehow you arrived here having never heard o
 [8]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Paging%20Dr.%20USB-%20Your%20Extraction%20Is%20Ready/Paging%20Dr.%20USB%3A%20Your%20Extraction%20Is%20Ready.md
 [9]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Special%20Delivery-Plug%20and%20Prey%2C%20Get%20Ransomware/Special%20Delivery%3A%20Plug%20and%20Prey%2C%20Get%20Ransomware.md
 [10]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/ZoHo%3F%20More%20Like%20ZO-NO/ZoHo%3F%20More%20Like%20ZO-NO.md/
-[11]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/
+[11]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Paging%20Dr.%20USB-%20Your%20Extraction%20Is%20Ready/Paging%20Dr.%20USB%3A%20Your%20Extraction%20Is%20Ready.md
+[12]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/The%20Credential%20Sync%20Catastrophe-%20When%20the%20MFA%20Button%20Finally%20Gave%20Up/Credential_Sync_Catastrophe.md
+[13]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/
