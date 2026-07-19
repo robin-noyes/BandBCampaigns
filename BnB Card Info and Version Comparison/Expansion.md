@@ -51,6 +51,7 @@
 ### Released 11-2022
 **Initial Compromise** 
 - No changes
+
 **Pivot and Escalate**
 - No changes
 
@@ -59,6 +60,7 @@
 
 **Persistance**
 - No changes
+
 **Injects**
 - No changes
 
@@ -69,3 +71,8 @@
 - Chris Benton 
 - Richard Meno 
 - Richard Phung
+
+
+## Expansion Deck V2
+### Released 12-2025
+Several card renames for **Persistnace** and **Injects** but no other changes.

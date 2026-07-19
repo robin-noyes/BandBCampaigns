@@ -10,7 +10,7 @@
 - Unpatched Critical Security Update
 - Malware Propagation
 
-** C2 and Exfil**
+**C2 and Exfil**
 - Clipboard Scrape
 - Rotating C2 Server Location
 
@@ -46,3 +46,15 @@
 - Cat Contillo
 - Mathew Brennan
 - Kyle Hanslovan
+
+## Huntress V1.1
+### Released 2026
+**Initial Compromise** 
+- .Net Desialization Exploit
+
+**Pivot and Escalate**
+- LDAP Bind Credential Theft
+
+**Consultants**
+- Jai Minton
+- Dray Agha
