@@ -13,9 +13,10 @@ PlugX, Mustang Panda, USB
 Core Deck, ICS/IoT V1, Huntress, Expansion Deck
 
 ## Scenarios
+### Variation 1
 ![](Solution_Congratulations_v1.png)
 
-
+### Variation 2
 ![](Solution_Congratulations_v2.png)
 
 
@@ -140,7 +141,6 @@ _**Personnel**_
 - Adequate staffing meant the team could work methodically instead of triaging everything with the “who’s the least tired?” assignment strategy.
 
 ## Procedure Failures
-(These are scenario specific true-to-life business professional reasons.)
 ### General Reasons
 _**Technical**_
 - Visibility into critical activity wasn’t quite where it needed to be, leaving analysts squinting at partial data and hoping the missing pieces weren’t important (they usually are).
@@ -226,7 +226,7 @@ The investigation confirmed that PlugX had entered the environment through infec
 
 
 
-References
+## References
 BleepingComputer. “PlugX Malware Hides on USB Devices to Infect New Windows Hosts.” BleepingComputer, https://www.bleepingcomputer.com/news/security/plugx-malware-hides-on-usb-devices-to-infect-new-windows-hosts/.
 
 BleepingComputer. “FBI Deletes Chinese PlugX Malware from Thousands of US Computers.” BleepingComputer, https://www.bleepingcomputer.com/news/security/fbi-deletes-chinese-plugx-malware-from-thousands-of-us-computers/.

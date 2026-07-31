@@ -62,8 +62,12 @@ Let us know what you think! And if somehow you arrived here having never heard o
 *Based on the intrusion where attackers spammed MFA prompts until someone finally tapped “Approve,” turning a nuisance notification into a golden ticket. What followed was a tour of Cisco’s internal environment featuring credential harvesting, lateral movement, and persistence techniques that blended in so well they might as well have been wearing company badges.*\
 [Scenario Guide][12]
 
-### Coming Soon
+### Congratulations, Your Removable Media Is Now an International Incident.
+Inspired by the PlugX‑laden USBs that turned routine file transfers into a diplomatic headache, this scenario shows how one “totally safe” thumb drive can quietly deploy a remote‑access trojan with geopolitical ambitions. It is a reminder that when malware hitchhikes on removable media, the blast radius does not stop at your endpoint—it can escalate all the way to international scrutiny.\
 [Scenario Guide][13]
+
+### Coming Soon
+[Scenario Guide][14]
 
 [1]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/Call%20From%20Inside%20the%20Network/Call%20From%20Inside%20the%20Network.md
 [2]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/That's%20Disputable/That's%20Disputable.md
@@ -77,4 +81,5 @@ Let us know what you think! And if somehow you arrived here having never heard o
 [10]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/ZoHo%3F%20More%20Like%20ZO-NO/ZoHo%3F%20More%20Like%20ZO-NO.md/
 [11]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Paging%20Dr.%20USB-%20Your%20Extraction%20Is%20Ready/Paging%20Dr.%20USB%3A%20Your%20Extraction%20Is%20Ready.md
 [12]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/The%20Credential%20Sync%20Catastrophe-%20When%20the%20MFA%20Button%20Finally%20Gave%20Up/Credential_Sync_Catastrophe.md
-[13]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/
+[13]:    https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/Congratulations%2C%20Your%20Removable%20Media%20Is%20Now%20an%20International%20Incident/Congratulations%2C%20Your%20Removable%20Media%20Is%20Now%20an%20International%20Incident.md
+[14]:  https://github.com/robin-noyes/BandBCampaigns/blob/BackdoorsAndBreaches/ 
