@@ -122,11 +122,12 @@ _**Technical**_
 - Baselines were current — a miracle attributed to someone finally finishing last quarter’s tuning — making PlugX’s deviations stand out instead of blending into legacy weirdness.
 - Detection logic had been updated recently, meaning the alerts were helpful for once and didn’t require deciphering like a cryptic puzzle left by a former employee.
 - Controls were configured tightly enough that PlugX couldn’t roam freely, making its behavior easier to trace and significantly less dramatic than it could have been.
+
 _**Financial**_
-    - Prior investments in monitoring and analysis paid off, proving that last year’s budget battles weren’t just an exercise in collective suffering.
-    - Funding for operational improvements meant analysts weren’t stuck waiting on missing data or slow systems, allowing the investigation to move forward without financial‑related delays.
-    - Training budgets had been used wisely, resulting in a team that actually knew how to interpret what they were seeing instead of guessing their way through the analysis.
-    - Strategic spending decisions ensured the organization had enough capacity and retention to support a real investigation instead of relying on “hope” as a security control.
+- Prior investments in monitoring and analysis paid off, proving that last year’s budget battles weren’t just an exercise in collective suffering.
+- Funding for operational improvements meant analysts weren’t stuck waiting on missing data or slow systems, allowing the investigation to move forward without financial‑related delays.
+- Training budgets had been used wisely, resulting in a team that actually knew how to interpret what they were seeing instead of guessing their way through the analysis.
+- Strategic spending decisions ensured the organization had enough capacity and retention to support a real investigation instead of relying on “hope” as a security control.
 
 _**Political**_
 - Leadership prioritized the investigation quickly, sparing analysts from the usual bureaucratic obstacle course and allowing work to begin before the situation escalated.
