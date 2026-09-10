@@ -66,8 +66,13 @@ Let us know what you think! And if somehow you arrived here having never heard o
 Inspired by the PlugX‑laden USBs that turned routine file transfers into a diplomatic headache, this scenario shows how one “totally safe” thumb drive can quietly deploy a remote‑access trojan with geopolitical ambitions. It is a reminder that when malware hitchhikes on removable media, the blast radius does not stop at your endpoint—it can escalate all the way to international scrutiny.\
 [Scenario Guide][13]
 
-### Coming Soon
+### Ransomware at Rush Hour: When a Password Breach Triggered a Fuel Crisis
+This scenario walks through how one lonely, reused VPN credential managed to kick off a full‑scale critical‑infrastructure meltdown before anyone finished their coffee. What starts as “just a weird login” quickly snowballs into lateral movement, encrypted exfiltration, and a shutdown that sends half the SOC into existential reflection. \
 [Scenario Guide][14]
+
+
+### Coming Soon
+[Scenario Guide][15]
 
 [1]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/Call%20From%20Inside%20the%20Network/Call%20From%20Inside%20the%20Network.md
 [2]:	https://github.com/AntiSyphon/BandBCampaigns/blob/main/That's%20Disputable/That's%20Disputable.md
